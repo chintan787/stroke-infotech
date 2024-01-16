@@ -2,7 +2,6 @@
 import React, { useState } from 'react'
 import SectionHeading from '../SectionHeading/SectionHeading'
 import Image from 'next/image';
-// import { Rating } from 'react-simple-star-rating'
 import StarRatingComponent from 'react-star-rating-component';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
