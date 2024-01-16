@@ -2,11 +2,11 @@
 import React, { useState } from 'react'
 import SectionHeading from '../SectionHeading/SectionHeading'
 import Image from 'next/image';
-import StarRatingComponent from 'react-star-rating-component';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+// import StarRatingComponent from 'react-star-rating-component';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
 
 // import './styles.css';
 import { Pagination, Navigation } from 'swiper/modules';
@@ -68,7 +68,7 @@ export default function Testimonials() {
 
           <div className='w-full lg:w-1/2'>
                 <div className='bg-lightRed max-w-[600px] p-8 rounded-[20px]'>
-                  <StarRatingComponent
+                  {/* <StarRatingComponent
                     name="reviews"
                     value={rating}
                     onStarHover={(nextValue: any, prevValue: any, name: any) => handleStarClick(nextValue, prevValue, name)}
@@ -78,7 +78,7 @@ export default function Testimonials() {
                     emptyStarColor={'#ccc'}
                     editing={true}
 
-                  />
+                  /> */}
 
                   <h4 className='font-bold text-[32px] leading-[42px] mt-2 mb-6'>“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
                   <div className='flex items-center'>

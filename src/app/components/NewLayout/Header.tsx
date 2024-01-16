@@ -1,28 +1,40 @@
 "use client"
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
-import {
-    ArrowPathIcon,
-    Bars3Icon,
-    ChartPieIcon,
-    CursorArrowRaysIcon,
-    FingerPrintIcon,
-    SquaresPlusIcon,
-    XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/24/solid'
+// import {
+//     ArrowPathIcon,
+//     Bars3Icon,
+//     ChartPieIcon,
+//     CursorArrowRaysIcon,
+//     FingerPrintIcon,
+//     SquaresPlusIcon,
+//     XMarkIcon,
+// } from '@heroicons/react/24/outline'
+// import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 const products = [
-    { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-    { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-    { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-    { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-    { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+    { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#',  },
+    { name: 'Engagement', description: 'Speak directly to your customers', href: '#',},
+    { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#',  },
+    { name: 'Integrations', description: 'Connect with third-party tools', href: '#',  },
+    { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#',  },
 ]
 const callsToAction = [
-    { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-    { name: 'Contact sales', href: '#', icon: PhoneIcon },
+    { name: 'Watch demo', href: '#' },
+    { name: 'Contact sales', href: '#' },
 ]
+// const products = [
+//     { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
+//     { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
+//     { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
+//     { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
+//     { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+// ]
+// const callsToAction = [
+//     { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
+//     { name: 'Contact sales', href: '#', icon: PhoneIcon },
+// ]
+
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
@@ -64,7 +76,7 @@ export default function Header() {
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
-                        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                        {/* <Bars3Icon className="h-6 w-6" aria-hidden="true" /> */}
                     </button>
                 </div>
                 <Popover.Group className="hidden lg:flex lg:gap-x-9 2xl:gap-x-12">
@@ -78,7 +90,7 @@ export default function Header() {
                     <Popover className="relative">
                         <Popover.Button className="font-gilroy flex items-center gap-x-1 text-[15px] font-medium leading-[18px] text-gray-900">
                             Our Service
-                            <ChevronDownIcon className="h-5 w-5 flex-none text-primary" aria-hidden="true" />
+                            {/* <ChevronDownIcon className="h-5 w-5 flex-none text-primary" aria-hidden="true" /> */}
                         </Popover.Button>
 
                         <Transition
@@ -98,7 +110,7 @@ export default function Header() {
                                             className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                                         >
                                             <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                                <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                                                {/* <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" /> */}
                                             </div>
                                             <div className="flex-auto">
                                                 <a href={item.href} className="block font-semibold text-gray-900">
@@ -117,7 +129,7 @@ export default function Header() {
                                             href={item.href}
                                             className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                                         >
-                                            <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                                            {/* <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" /> */}
                                             {item.name}
                                         </a>
                                     ))}
@@ -179,7 +191,7 @@ export default function Header() {
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             <span className="sr-only">Close menu</span>
-                            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                            {/* <XMarkIcon className="h-6 w-6" aria-hidden="true" /> */}
                         </button>
                     </div>
                     <div className="mt-6 flow-root">
@@ -190,10 +202,10 @@ export default function Header() {
                                         <>
                                             <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                                                 Product
-                                                <ChevronDownIcon
+                                                {/* <ChevronDownIcon
                                                     className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                                                     aria-hidden="true"
-                                                />
+                                                /> */}
                                             </Disclosure.Button>
                                             <Disclosure.Panel className="mt-2 space-y-2">
                                                 {[...products, ...callsToAction].map((item) => (
