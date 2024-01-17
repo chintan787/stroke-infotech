@@ -3,39 +3,22 @@ import React, { useState } from 'react'
 import SectionHeading from '../SectionHeading/SectionHeading'
 import Image from 'next/image';
 // import StarRatingComponent from 'react-star-rating-component';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/css';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 // import './styles.css';
 import { Pagination, Navigation } from 'swiper/modules';
-
+import StarRating from '../StarRating/StarRating';
 
 export default function Testimonials() {
-  // const [rating, setRating] = useState(0);
-
-  // // Catch Rating value
-  // const handleRating = (rate: number) => {
-  //   setRating(rate)
-
-  //   // other logic
-  // }
-  // // Optinal callback functions
-  // const onPointerEnter = () => console.log('Enter')
-  // const onPointerLeave = () => console.log('Leave')
-  // const onPointerMove = (value: number, index: number) => console.log(value, index)
-
-  const [rating, setRating] = useState(2);
-  const handleStarClick = (nextValue: any, prevValue: any, name: any) => {
-    setRating(nextValue);
-  }
+  
 
   return (
     <div className="bg-white my-16 px-6 sm:px-10">
       <div className='max-w-[1320px] mx-auto '>
         <SectionHeading title="Let our customers speak for us" color="text-black" />
-        {/* <h2 className="text-[48px] leading-[59px] font-bold">We’d love to work with you.</h2> */}
 
         <div className='my-10 flex flex-col lg:flex-row'>
 
@@ -67,18 +50,33 @@ export default function Testimonials() {
 
 
           <div className='w-full lg:w-1/2'>
+            <Swiper
+              pagination={{
+                type: 'fraction',
+              }}
+              navigation={true}
+              loop={true}
+              modules={[Pagination, Navigation]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
                 <div className='bg-lightRed max-w-[600px] p-8 rounded-[20px]'>
-                  {/* <StarRatingComponent
-                    name="reviews"
-                    value={rating}
-                    onStarHover={(nextValue: any, prevValue: any, name: any) => handleStarClick(nextValue, prevValue, name)}
-                    onStarClick={(nextValue: any, prevValue: any, name: any) => handleStarClick(nextValue, prevValue, name)}
-                    starCount={5}
-                    starColor={'#FF455C'}
-                    emptyStarColor={'#ccc'}
-                    editing={true}
+                  <StarRating />
+                  <h4 className='font-bold text-[32px] leading-[42px] mt-2 mb-6'>“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
+                  <div className='flex items-center'>
+                    <Image src="/images/Dp.png" height={74} width={74} className='w-[75px] h-[75px] rounded-full' alt='profile' />
+                    <div className='pl-4'>
+                      <h4 className="font-montserrat font-semibold text-lg leading-[22px] mb-2">Daniel Dandemar</h4>
+                      <p className="font-montserrat text-sm leading-[15px] font-normal mb-1">Tech Manager</p>
+                      <p className="font-montserrat text-sm leading-[15px] font-normal">Nordic Leisure Travel Group</p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
 
-                  /> */}
+              <SwiperSlide>
+                <div className='bg-lightRed max-w-[600px] p-8 rounded-[20px]'>
+                <StarRating />
 
                   <h4 className='font-bold text-[32px] leading-[42px] mt-2 mb-6'>“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
                   <div className='flex items-center'>
@@ -90,11 +88,15 @@ export default function Testimonials() {
                     </div>
                   </div>
                 </div>
+              </SwiperSlide>
+
               <div className='flex items-center justify-end max-w-[600px] my-6'>
-                <button className='bg-lightRed w-[52px] h-[52px] rounded-full flex justify-center items-center'><Image src="/images/Previous-arrow.svg" height={18} width={14} alt='previous' /></button>
-                <p className='text-primary font-montserrat font-medium text-lg leading-[21px] mx-6'>1/5</p>
-                <button className='bg-lightRed w-[52px] h-[52px] rounded-full flex justify-center items-center'><Image src="/images/Next-arrow.svg" height={18} width={14} alt='next' /></button>
+                {/* <button className='bg-lightRed w-[52px] h-[52px] rounded-full flex justify-center items-center '><Image src="/images/Previous-arrow.svg" height={18} width={14} alt='previous' /></button> */}
+                {/* <p className='text-primary font-montserrat font-medium text-lg leading-[21px] mx-6'>1/5</p> */}
+                {/* <button className='bg-lightRed w-[52px] h-[52px] rounded-full flex justify-center items-center ' ><Image src="/images/Next-arrow.svg" height={18} width={14} alt='next' /></button> */}
               </div>
+
+            </Swiper>
           </div>
         </div>
       </div>

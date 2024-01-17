@@ -1,11 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @font-face{
-  font-family: "gilroy";
-  src:local("GilroyBold"),url("/public/fonts/Gilroy-Bold.ttf") format('ttf');
-  font-weight: 700;
-} */
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -28,12 +24,7 @@ body {
   color: rgb(var(--foreground-rgb));
   font-family: var(--font-gilory) ;
   color: #000;
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+
 }
 
 
@@ -46,3 +37,80 @@ padding-right: 5px;
 .dv-star-rating-star i{
   font-size: 2.4rem;
 }
+
+
+/* slider pagination */
+
+.swiper{
+  display: flex;
+  flex-direction: column;
+}
+.mySwiper{
+height: 100%;
+max-width: 600px;
+padding-bottom: 10px;
+}
+.mySwiper [class^="swiper-button-"]{
+  top: initial;
+  bottom: 0;
+}
+
+
+.swiper .swiper-button-prev
+{
+background-color: #fff9fa;
+width: 52px;
+height: 52px;
+border-radius: 50%;
+left:initial;
+right:150px;
+
+}
+.swiper .swiper-button-next{
+  background-color: #fff9fa;
+width: 52px;
+height: 52px;
+border-radius: 50%;
+right:0;
+}
+
+.swiper .swiper-button-prev::after{
+content: url('/images/Previous-arrow.svg');
+background-repeat: no-repeat;
+font-size: 14px;
+}
+.swiper .swiper-button-next::after{
+  content: url('/images/Next-arrow.svg');
+  background-repeat: no-repeat;
+  font-size: 14px;
+}
+.swiper .swiper-pagination{
+  position: absolute;
+  top: initial;
+    bottom: 14px;
+    right: 80px;
+    left: initial;
+    width: auto;
+  color:var(--color-primary);
+
+}
+
+.swiper .swiper-pagination span{
+  color:var(--color-primary);
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+
+@media (max-width:1024px){
+  .swiper.mySwiper{
+    padding-bottom: 15px;
+  }
+.swiper .swiper-pagination{
+bottom: 15px;
+}
+  }
+  
+

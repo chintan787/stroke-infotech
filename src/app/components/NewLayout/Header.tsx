@@ -12,12 +12,16 @@ import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 // } from '@heroicons/react/24/outline'
 // import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
+import MenuIcon from '../../../../icons/MenuIcon'
+import ChevronDownIcon from '../../../../icons/ChevronDownIcon'
+import XMarkIcon from '../../../../icons/XMarkIcon'
+
 const products = [
-    { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#',  },
-    { name: 'Engagement', description: 'Speak directly to your customers', href: '#',},
-    { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#',  },
-    { name: 'Integrations', description: 'Connect with third-party tools', href: '#',  },
-    { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#',  },
+    { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', },
+    { name: 'Engagement', description: 'Speak directly to your customers', href: '#', },
+    { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', },
+    { name: 'Integrations', description: 'Connect with third-party tools', href: '#', },
+    { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', },
 ]
 const callsToAction = [
     { name: 'Watch demo', href: '#' },
@@ -47,7 +51,7 @@ export default function Header() {
         <header className="bg-white border-b border-gray">
             <nav className="mx-auto flex max-w-[1320px] items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex ">
-                {/* lg:flex-1 */}
+                    {/* lg:flex-1 */}
                     <a href="#" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
                         <Image
@@ -76,6 +80,9 @@ export default function Header() {
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
+
+                        <MenuIcon />
+
                         {/* <Bars3Icon className="h-6 w-6" aria-hidden="true" /> */}
                     </button>
                 </div>
@@ -91,6 +98,7 @@ export default function Header() {
                         <Popover.Button className="font-gilroy flex items-center gap-x-1 text-[15px] font-medium leading-[18px] text-gray-900">
                             Our Service
                             {/* <ChevronDownIcon className="h-5 w-5 flex-none text-primary" aria-hidden="true" /> */}
+                            <ChevronDownIcon className="text-primary" />
                         </Popover.Button>
 
                         <Transition
@@ -191,6 +199,7 @@ export default function Header() {
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             <span className="sr-only">Close menu</span>
+                            <XMarkIcon />
                             {/* <XMarkIcon className="h-6 w-6" aria-hidden="true" /> */}
                         </button>
                     </div>
