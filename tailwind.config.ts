@@ -11,7 +11,8 @@ const config: Config = {
       primary:'var(--color-primary)',
       secondary:'var(--color-secondary)',
       white:'#fff',
-      black:'#000',
+      // black:'#000',
+      black:'var(--color-secondary)',
       gray:'#ccc',
       lightRed:'#fff9fa',
       blue:'#14133B',
@@ -43,7 +44,7 @@ const config: Config = {
         gilroy: ["var(--font-gilory)","system-ui", "sans-serif"],
         montserrat:["var(--font-montserrat)","system-ui", "sans-serif"],
         primaryFont:["var(--font-gilory)","system-ui", "sans-serif"],
-        secondaryFont:["var(--font-plus-Jakarta-Sans)","system-ui", "sans-serif"],
+        secondaryFont:["var(--font-outfit)","system-ui", "sans-serif"],
         outfitFont:["var(--font-outfit)","system-ui", "sans-serif"]
         // default: ["var(--font)","sans-serif"],
       }

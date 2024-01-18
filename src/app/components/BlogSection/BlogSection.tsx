@@ -16,7 +16,7 @@ export default function BlogSection() {
                                 <p className='text-primary font-medium text-xl leading-[24px] px-4 my-2'>Dec 13 2023</p>
                             </div>
                             <div className='px-5 pt-2 pb-6 '>
-                                <p className='font-montserrat font-medium text-xl leading-[30px]'>UX/UI best practices: Extensive interview with Fingers Media designers</p>
+                                <p className='font-secondaryFont font-medium text-xl leading-[30px] text-black'>UX/UI best practices: Extensive interview with Fingers Media designers</p>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@ export default function BlogSection() {
                                 <p className='text-primary font-medium text-xl leading-[24px] px-4 my-2'>Dec 13 2023</p>
                             </div>
                             <div className='px-5 pt-2 pb-6 '>
-                                <p className='font-montserrat font-medium text-xl leading-[30px]'>3 things to remember when you need to publish Android app on Play Store</p>
+                                <p className='font-secondaryFont font-medium text-xl leading-[30px] text-black'>3 things to remember when you need to publish Android app on Play Store</p>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ export default function BlogSection() {
                         <div className="my-4">
                             <SectionParagraph text="A passionate team of developers, designers & originators, who can visualize and develop breathtaking design, websites and apps for your business." />
                         </div>
-                        {/* <p className="font-montserrat font-regular text-black my-4 text-lg leading-[30px] ">A passionate team of developers, designers & originators, who can visualize and develop breathtaking design, websites and apps for your business.</p> */}
+                        {/* <p className="font-secondaryFont font-regular text-black my-4 text-lg leading-[30px] ">A passionate team of developers, designers & originators, who can visualize and develop breathtaking design, websites and apps for your business.</p> */}
                         <div className="bg-[url('/images/BlogSection/Paper-Btn-Bg.png')] bg-no-repeat w-32 h-36 flex justify-evenly items-center flex-col">
                             <p className="font-semibold w-[80%] text-center text-xs leading-4 uppercase">Read Latest blog</p>
                             <button className='w-10 h-10 bg-primary rounded-full flex justify-center items-center'>

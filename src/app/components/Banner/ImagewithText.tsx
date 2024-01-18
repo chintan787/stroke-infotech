@@ -32,7 +32,7 @@ export default function ImagewithText() {
                 {count.map((item) =>
                     <div>
                         <h2 className=" text-7xl leading-[76px] text-primary font-bold text-center">{item.total}</h2>
-                        <p className="font-secondaryFont text-xl leading-7 font-semibold mt-4">{item.name}</p>
+                        <p className="font-secondaryFont text-xl leading-7 font-semibold mt-4 text-black">{item.name}</p>
                     </div>
                 )}
 

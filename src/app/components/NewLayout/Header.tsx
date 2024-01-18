@@ -15,6 +15,7 @@ import Image from 'next/image'
 import MenuIcon from '../../../../icons/MenuIcon'
 import ChevronDownIcon from '../../../../icons/ChevronDownIcon'
 import XMarkIcon from '../../../../icons/XMarkIcon'
+import ChevronRightIcon from '../../../../icons/ChevronRightIcon'
 
 const products = [
     { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', },
@@ -39,6 +40,27 @@ const callsToAction = [
 //     { name: 'Contact sales', href: '#', icon: PhoneIcon },
 // ]
 
+const megamenuTitles = [
+    { title: "UI/UX Designer" },
+    {
+        title: "CMS & Ecommerce", children: [
+            { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
+            { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
+            { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
+            { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
+            { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
+            { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
+        ]
+    },
+    { title: "Web Development" },
+    { title: "Mobile App Development" },
+    { title: "Website Maintenance" },
+    { title: "Hire Dedicated Developers" },
+
+
+
+    // "UI/UX Designer", "CMS & Ecommerce", "Web Development", "Mobile App Development", "Website Maintenance", "Hire Dedicated Developers"
+]
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
@@ -110,38 +132,50 @@ export default function Header() {
                             leaveFrom="opacity-100 translate-y-0"
                             leaveTo="opacity-0 translate-y-1"
                         >
-                            <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
-                                <div className="p-4">
-                                    {products.map((item) => (
-                                        <div
-                                            key={item.name}
-                                            className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
-                                        >
-                                            <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                                {/* <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" /> */}
+                            <Popover.Panel className="absolute top-11 z-10 mt-3 w-screen max-w-[996px] overflow-hidden rounded-[30px] bg-white shadow-lg"
+                                style={{ transform: 'scaleY(1) translate(-40%)' }}>
+                                <div className="flex">
+                                    <div className="w-2/6 ">
+                                        {megamenuTitles.map((item) =>
+                                            <div className='bg-lightRed py-5 pl-6 text-secondary border-r-2 border-r-primary flex justify-between hover:border-r-white hover:bg-white hover:text-primary hover:cursor-pointer border-l-4 border-l-lightRed hover:border-l-primary	'>
+                                                <h4 className=' text-lg leading-[22px] font-medium'>{item.title}</h4>
+                                                {item.children && (
+                                                    <ChevronRightIcon />
+                                                )}
                                             </div>
-                                            <div className="flex-auto">
-                                                <a href={item.href} className="block font-semibold text-gray-900">
-                                                    {item.name}
-                                                    <span className="absolute inset-0" />
-                                                </a>
-                                                <p className="mt-1 text-gray-600">{item.description}</p>
-                                            </div>
+                                        )}
+
+                                    </div>
+                                    <div className="w-4/6 p-8 grow self-center ">
+                                        <div className='grid grid-cols-2 gap-14'>
+                                        {megamenuTitles.map((item) =>
+                                            item?.children?.map((list) =>
+                                                <div className='flex gap-4 items-center'>
+                                                    <div className='w-[60px] h-[60px] border border-primary rounded-[10px] flex justify-center items-center'>
+                                                        <Image src={list.icon} height={30} width={30} alt={''} />
+                                                    </div>
+                                                    <div>
+                                                    <h4 className='text-sm text-secondary font-secondaryFont font-semibold'>{list.subtitle}</h4>
+                                                    <p className='text-xs text-[#818F9E] font-secondaryFont font-medium leading-[18px]'>{list.desc}</p>
+                                                    </div>
+                                                </div>
+                                            )
+                                        )}
                                         </div>
-                                    ))}
+                                       
+                                    </div>
                                 </div>
-                                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                                {/* <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                                     {callsToAction.map((item) => (
                                         <a
                                             key={item.name}
                                             href={item.href}
                                             className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                                         >
-                                            {/* <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" /> */}
                                             {item.name}
                                         </a>
                                     ))}
-                                </div>
+                                </div> */}
                             </Popover.Panel>
                         </Transition>
                     </Popover>

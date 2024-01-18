@@ -31,7 +31,7 @@ export default function Technologystack() {
                     {techType.map((tech) =>
                         <div className='bg-lightRed max-w-[140px] sm:max-w-[166px] w-full h-auto flex flex-col justify-center items-center py-6 sm:py-8 rounded-[40px]'>
                             <img src={tech.icon} className='w-auto pt-2' /> 
-                            <p className='font-normal text-base leading-[18px] pt-6'>{tech.techName}</p>
+                            <p className='font-normal text-base leading-[18px] pt-6 text-black'>{tech.techName}</p>
                         </div>
                     )}
                 </div>
