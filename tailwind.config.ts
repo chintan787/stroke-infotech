@@ -41,7 +41,10 @@ const config: Config = {
     extend: {
       fontFamily:{
         gilroy: ["var(--font-gilory)","system-ui", "sans-serif"],
-        montserrat:["var(--font-montserrat)","system-ui", "sans-serif"]
+        montserrat:["var(--font-montserrat)","system-ui", "sans-serif"],
+        primaryFont:["var(--font-gilory)","system-ui", "sans-serif"],
+        secondaryFont:["var(--font-plus-Jakarta-Sans)","system-ui", "sans-serif"],
+        outfitFont:["var(--font-outfit)","system-ui", "sans-serif"]
         // default: ["var(--font)","sans-serif"],
       }
       // backgroundImage: {

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import {Montserrat} from 'next/font/google';
+import {Plus_Jakarta_Sans} from 'next/font/google';
+import {Outfit} from 'next/font/google'
 import './globals.css';
 import localFont from 'next/font/local';
 
@@ -31,6 +33,13 @@ const monts = Montserrat({
   variable:'--font-montserrat',
   subsets: ['latin'] })
 
+  const plus = Plus_Jakarta_Sans({ 
+    variable:'--font-plus-Jakarta-Sans',
+    subsets: ['latin'] })
+
+    const outfit = Outfit({ 
+      variable:'--font-outfit',
+      subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -44,7 +53,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${Gilory.variable} ${monts.variable}`}>{children}</body>
+      <body className={`${Gilory.variable} ${monts.variable} ${plus.variable} ${outfit.variable}`}>{children}</body>
     </html>
   )
 }

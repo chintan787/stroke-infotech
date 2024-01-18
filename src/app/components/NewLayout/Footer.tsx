@@ -71,7 +71,7 @@ export default function Footer() {
                         </a>
                         <div className="mt-3 ">
                             <div className='w-[80%] text-left'>
-                                <p className='font-montserrat font-medium text-[13px] leading-[29px]'>We help businesses improve their support by performance by providing managed services such as backup user management, security, networking, and support.</p>
+                                <p className='font-secondaryFont font-medium text-[13px] leading-[29px]'>We help businesses improve their support by performance by providing managed services such as backup user management, security, networking, and support.</p>
                             </div>
                             <div className='flex gap-6 py-4'>
                                 <Image src="/images/Footer/Clutch.png" height={40} width={82} alt='Clutch' className='h-10 w-auto' />
@@ -88,7 +88,7 @@ export default function Footer() {
                                 </a>
                                 <div className="mt-3 ">
                                     <div className='w-[80%] '>
-                                        <p className='font-montserrat font-medium text-[13px] leading-[29px]'>We help businesses improve their support by performance by providing managed services such as backup user management, security, networking, and support.</p>
+                                        <p className='font-secondaryFont font-medium text-[13px] leading-[29px]'>We help businesses improve their support by performance by providing managed services such as backup user management, security, networking, and support.</p>
                                     </div>
                                     <div className='flex gap-6 py-4'>
                                         <Image src="/images/Footer/Clutch.png" height={40} width={82} alt='Clutch' className='h-10 w-auto' />
@@ -103,7 +103,7 @@ export default function Footer() {
                             <ul className="space-y-0.5 mt-3">
                                 {ourservice.map((list) =>
                                     <li>
-                                        <a rel="noopener noreferrer" href="#" className="font-montserrat font-medium text-white text-[13px] leading-[29px]">{list}</a>
+                                        <a rel="noopener noreferrer" href="#" className="font-secondaryFont font-medium text-white text-[13px] leading-[29px]">{list}</a>
                                     </li>
                                 )}
                             </ul>
@@ -114,7 +114,7 @@ export default function Footer() {
                             <ul className="space-y-0.5 mt-3">
                                 {company.map((list) =>
                                     <li>
-                                        <a rel="noopener noreferrer" href="#" className="font-montserrat font-medium text-white text-[13px] leading-[29px]">{list}</a>
+                                        <a rel="noopener noreferrer" href="#" className="font-secondaryFont font-medium text-white text-[13px] leading-[29px]">{list}</a>
                                     </li>
                                 )}
                             </ul>
@@ -126,23 +126,23 @@ export default function Footer() {
 
                                 <li className='flex gap-2 pb-3'>
                                     <Image src="/images/Footer/map.svg" height={20} width={20} alt='map' className='h-5 w-5' />
-                                    <a rel="noopener noreferrer" href="#" className='font-montserrat font-medium text-white text-[13px] leading-[22px]'>
+                                    <a rel="noopener noreferrer" href="#" className='font-secondaryFont font-medium text-white text-[13px] leading-[22px]'>
                                         407, Arth Business Center(ABC), Opp. Torrent Power Sub Station, Ring Road, Nikol, Ahmedabad, Gujarat - 382350
                                     </a>
                                 </li>
                                 <li className='flex gap-2 pb-3'>
                                     <Image src="/images/Footer/phone.svg" height={20} width={20} alt='map' className='h-5 w-5' />
                                     <div>
-                                        <a rel="noopener noreferrer" href="tel:+918460569854" className='font-montserrat font-medium text-white text-[13px] leading-[22px]'>
+                                        <a rel="noopener noreferrer" href="tel:+918460569854" className='font-secondaryFont font-medium text-white text-[13px] leading-[22px]'>
                                             (+91) 8460569854
                                         </a>
                                         <br />
-                                        <a rel="noopener noreferrer" href="tel:+919974593600" className='font-montserrat font-medium text-white text-[13px] leading-[22px]'>(+91) 9974593600</a>
+                                        <a rel="noopener noreferrer" href="tel:+919974593600" className='font-secondaryFont font-medium text-white text-[13px] leading-[22px]'>(+91) 9974593600</a>
                                     </div>
                                 </li>
                                 <li className='flex gap-2 pb-3'>
                                     <Image src="/images/Footer/mail.svg" height={20} width={20} alt='map' className='h-5 w-5' />
-                                    <a rel="noopener noreferrer" href="mailto:info@strokeinfotech.com" className='font-montserrat font-medium text-white text-[13px] leading-[22px]'>
+                                    <a rel="noopener noreferrer" href="mailto:info@strokeinfotech.com" className='font-secondaryFont font-medium text-white text-[13px] leading-[22px]'>
                                         info@strokeinfotech.com
                                     </a>
                                 </li>

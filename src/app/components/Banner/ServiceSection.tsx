@@ -29,10 +29,10 @@ export default function ServiceSection() {
 
                     <div className="my-4 flex flex-row w-full gap-8 flex-wrap grid-cols-2 lg:grid-cols-3 justify-center lg:justify-start">
                         {service.map((i) =>
-                            <a href="#" className='service-content font-montserrat text-black font-semibold bg-white text-xl flex flex-col justify-center items-center shadow rounded-[30px] py-8 2xl:py-12 w-5/12 sm:w-1/4 hover:bg-primary hover:text-white'>
+                            <a href="#" className='service-content font-secondaryFont text-black font-semibold bg-white text-xl flex flex-col justify-center items-center shadow rounded-[30px] py-8 2xl:py-12 w-5/12 sm:w-1/4 hover:bg-primary hover:text-white'>
                                 {/* <img src={i.src} className=' lg:h-[40px] xl:h-[60px] w-auto' /> */}
                                <Image src={i.src} width={60} height={60} alt="" className="h-[40px] lg:h-[40px] xl:h-[60px] w-aut0" />
-                                <p className="mt-2 2xl:mt-4 text-lg md:text-xl max-w-48 text-center">{i.text}</p>
+                                <p className="mt-2 2xl:mt-4 text-lg md:text-xl max-w-48 text-center font-secondaryFont">{i.text}</p>
                             </a>
                         )}
                     </div>

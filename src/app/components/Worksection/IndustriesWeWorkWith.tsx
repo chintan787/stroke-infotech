@@ -32,7 +32,7 @@ export default function IndustriesWeWorkWith() {
                     {work.map((i) =>
                     <div className='flex flex-col justify-center items-center'>
                         <img src={i.icon} />
-                        <p className='font-montserrat font-medium text-lg text-black mt-6'>{i.text}</p>
+                        <p className='font-secondaryFont font-medium text-lg text-black mt-6'>{i.text}</p>
                         </div>
                     )}
                 </div>
