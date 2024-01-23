@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.18",
+    "@material-tailwind/html": "^2.2.2",
     "@types/react": "^18.2.48",
     "classnames": "^2.5.1",
     "heroicons-react": "^1.4.1",

@@ -16,6 +16,7 @@ import MenuIcon from '../../../../icons/MenuIcon'
 import ChevronDownIcon from '../../../../icons/ChevronDownIcon'
 import XMarkIcon from '../../../../icons/XMarkIcon'
 import ChevronRightIcon from '../../../../icons/ChevronRightIcon'
+import ArrowUpperIcon from '../../../../icons/ArrowUpperIcon'
 
 const products = [
     { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', },
@@ -108,19 +109,19 @@ export default function Header() {
                         {/* <Bars3Icon className="h-6 w-6" aria-hidden="true" /> */}
                     </button>
                 </div>
-                <Popover.Group className="hidden lg:flex lg:gap-x-9 2xl:gap-x-12">
-                    <a href="#" className="font-gilroy text-[15px] font-medium leading-[18px] text-gray-900">
+                <Popover.Group className="hidden lg:flex lg:gap-x-9 2xl:gap-x-12 items-center">
+                    <a href="#" className="font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
                         Home
                     </a>
-                    <a href="#" className="font-gilroy text-[15px] font-medium leading-[18px]  text-gray-900">
+                    <a href="#" className="font-gilroy text-[0.938rem] font-medium leading-[1.125rem]  text-secondary">
                         Our Work
                     </a>
 
                     <Popover className="relative">
-                        <Popover.Button className="font-gilroy flex items-center gap-x-1 text-[15px] font-medium leading-[18px] text-gray-900">
+                        <Popover.Button className="font-gilroy flex items-center gap-x-1 text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
                             Our Service
                             {/* <ChevronDownIcon className="h-5 w-5 flex-none text-primary" aria-hidden="true" /> */}
-                            <ChevronDownIcon className="text-primary" />
+                            <ChevronDownIcon className="text-primary h-4 w-4" />
                         </Popover.Button>
 
                         <Transition
@@ -132,9 +133,13 @@ export default function Header() {
                             leaveFrom="opacity-100 translate-y-0"
                             leaveTo="opacity-0 translate-y-1"
                         >
-                            <Popover.Panel className="absolute top-11 z-10 mt-3 w-screen max-w-[996px] overflow-hidden rounded-[30px] bg-white shadow-lg"
+
+                            <Popover.Panel className="megamenu absolute top-11 z-10 mt-3 w-screen max-w-[996px] overflow-hidden rounded-[30px] bg-white shadow-lg"
                                 style={{ transform: 'scaleY(1) translate(-40%)' }}>
-                                <div className="flex">
+                                {/* <div className='absolute -top-2 left-2/4 overflow-visiable'>
+                                    <ArrowUpperIcon />
+                                </div> */}
+                                <div className="flex ">
                                     <div className="w-2/6 ">
                                         {megamenuTitles.map((item) =>
                                             <div className='bg-lightRed py-5 pl-6 text-secondary border-r-2 border-r-primary flex justify-between hover:border-r-white hover:bg-white hover:text-primary hover:cursor-pointer border-l-4 border-l-lightRed hover:border-l-primary	'>
@@ -148,21 +153,21 @@ export default function Header() {
                                     </div>
                                     <div className="w-4/6 p-8 grow self-center ">
                                         <div className='grid grid-cols-2 gap-14'>
-                                        {megamenuTitles.map((item) =>
-                                            item?.children?.map((list) =>
-                                                <div className='flex gap-4 items-center'>
-                                                    <div className='w-[60px] h-[60px] border border-primary rounded-[10px] flex justify-center items-center'>
-                                                        <Image src={list.icon} height={30} width={30} alt={''} />
+                                            {megamenuTitles.map((item) =>
+                                                item?.children?.map((list) =>
+                                                    <div className='flex gap-4 items-center'>
+                                                        <div className='w-[60px] h-[60px] border border-primary rounded-[10px] flex justify-center items-center'>
+                                                            <Image src={list.icon} height={30} width={30} alt={''} />
+                                                        </div>
+                                                        <div>
+                                                            <h4 className='text-sm text-secondary font-secondaryFont font-semibold'>{list.subtitle}</h4>
+                                                            <p className='text-xs text-[#818F9E] font-secondaryFont font-medium leading-[1.125rem]'>{list.desc}</p>
+                                                        </div>
                                                     </div>
-                                                    <div>
-                                                    <h4 className='text-sm text-secondary font-secondaryFont font-semibold'>{list.subtitle}</h4>
-                                                    <p className='text-xs text-[#818F9E] font-secondaryFont font-medium leading-[18px]'>{list.desc}</p>
-                                                    </div>
-                                                </div>
-                                            )
-                                        )}
+                                                )
+                                            )}
                                         </div>
-                                       
+
                                     </div>
                                 </div>
                                 {/* <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
@@ -180,10 +185,10 @@ export default function Header() {
                         </Transition>
                     </Popover>
 
-                    <a href="#" className="font-gilroy text-[15px] font-medium leading-[18px] text-gray-900">
+                    <a href="#" className="font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
                         Blog
                     </a>
-                    <a href="#" className="font-gilroy text-[15px] font-medium leading-[18px] text-gray-900">
+                    <a href="#" className="font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
                         About
                     </a>
 
@@ -215,16 +220,26 @@ export default function Header() {
                     </button>
                 </div>
             </nav>
+
+            {/* Mobile Menu */}
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                 <div className="fixed inset-0 z-10" />
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
-                            <img
+                            {/* <img
                                 className="h-8 w-auto"
                                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                                 alt=""
+                            /> */}
+                            <Image
+                                src="/images/Clip-path-group.svg"
+                                alt="Logo"
+                                className="h-8 w-auto"
+                                width={100}
+                                height={38}
+                                priority
                             />
                         </a>
                         <button
@@ -240,55 +255,82 @@ export default function Header() {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
+
+                                <a
+                                    href="#"
+                                    className="-mx-3 block rounded-lg px-3 py-2 font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:bg-gray-50"
+                                >
+                                    Home
+                                </a>
+                                <a
+                                    href="#"
+                                    className="-mx-3 block rounded-lg px-3 py-2 font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:bg-gray-50"
+                                >
+                                    Our Work
+                                </a>
+
                                 <Disclosure as="div" className="-mx-3">
-                                    {({ open }) => (
+                                    {({ }) => (
                                         <>
-                                            <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                                                Product
+                                            <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-1.5 pl-3 pr-3.5 font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:bg-gray-50">
+                                                Our Service
+                                                <ChevronDownIcon className="text-primary h-4 w-4" />
                                                 {/* <ChevronDownIcon
                                                     className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                                                     aria-hidden="true"
                                                 /> */}
                                             </Disclosure.Button>
-                                            <Disclosure.Panel className="mt-2 space-y-2">
-                                                {[...products, ...callsToAction].map((item) => (
+                                            <Disclosure.Panel className="mt-2 space-y-4 ">
+
+                                                {/* {megamenuTitles.map((item) => ( */}
+                                                {megamenuTitles.map((item) =>
+                                                    <Disclosure.Button
+                                                        key={item.title}
+                                                        as="a"
+                                                        className="block rounded-lg py-2 pl-6 pr-3 font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary  hover:text-primary"
+                                                    >
+                                                        {item.title}
+                                                    </Disclosure.Button>
+                                                )}
+
+                                                {/* {[...products, ...callsToAction].map((item) => ( 
                                                     <Disclosure.Button
                                                         key={item.name}
                                                         as="a"
                                                         href={item.href}
-                                                        className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                                        className="block rounded-lg py-2 pl-6 pr-3 font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:bg-gray-50"
                                                     >
                                                         {item.name}
                                                     </Disclosure.Button>
-                                                ))}
+                                                ))} */}
                                             </Disclosure.Panel>
                                         </>
                                     )}
                                 </Disclosure>
                                 <a
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2 font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary  hover:bg-gray-50"
                                 >
-                                    Features
+                                    Blog
                                 </a>
                                 <a
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2 font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:bg-gray-50"
                                 >
-                                    Marketplace
+                                    About
                                 </a>
-                                <a
+                                {/* <a
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2 font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:bg-gray-50"
                                 >
                                     Company
-                                </a>
+                                </a> */}
                             </div>
                             <div className="py-6">
 
                                 <a
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2.5 font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary  hover:bg-gray-50"
                                 >
                                     Log in
                                 </a>

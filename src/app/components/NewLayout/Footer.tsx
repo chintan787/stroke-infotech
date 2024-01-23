@@ -1,13 +1,21 @@
 import React from 'react'
 import Image from 'next/image';
-
+import FacebookIcon from '../../../../icons/FacebookIcon';
+import TwitterIcon from '../../../../icons/TwitterIcon';
+import LinkedInIcon from '../../../../icons/LinkedInIcon';
+import SkypeIcon from '../../../../icons/SkypeIcon';
 
 export default function Footer() {
     const socialIcons = [
-        { icon: '/images/Footer/Facebook.svg', name: 'Facebook' },
-        { icon: '/images/Footer/Twitter.svg', name: 'Twitter' },
-        { icon: '/images/Footer/Linkedin.svg', name: 'LinkedIn' },
-        { icon: '/images/Footer/Skype.svg', name: 'Skype' },
+        // { icon: '/images/Footer/Facebook.svg', name: 'Facebook' },
+        { icon: FacebookIcon, name: 'Facebook' },
+        { icon: TwitterIcon, name: 'Twitter' },
+        { icon: LinkedInIcon, name: 'LinkedIn' },
+        { icon: SkypeIcon, name: 'Skype' },
+
+        // { icon: '/images/Footer/Twitter.svg', name: 'Twitter' },
+        // { icon: '/images/Footer/Linkedin.svg', name: 'LinkedIn' },
+        // { icon: '/images/Footer/Skype.svg', name: 'Skype' },
 
 
     ]
@@ -41,13 +49,14 @@ export default function Footer() {
                 <div className="border-y  border-y-primary">
                     <div className='max-w-[1320px] mx-auto '>
 
-                        <div className=' w-full justify-evenly items-center hidden md:flex'>
-                            {socialIcons.map((item) =>
-                                <a href='#' className='flex items-center w-1/2 md:w-1/4 justify-center border-r border-r-primary py-4 bg-white hover:bg-primary text-primary hover:text-white'>
+                        <div className=' w-full justify-evenly items-center flex'>
+                            {socialIcons.map((item,index) =>
+                                <a href='#' className={`socialIcons flex items-center w-1/2 md:w-1/4 justify-center ${socialIcons.length - 1 === index ? 'border-r-0' : 'border-r'} border-r-primary py-4 bg-white hover:bg-primary text-primary hover:text-white`}>
                                     <div className='border border-primary rounded-[10px] w-10 h-10 flex items-center justify-center'>
-                                        <Image src={item.icon} height={16} width={16} alt={item.name} />
+                                        <item.icon  /> 
+                                        {/* <Image src={item.icon} height={16} width={16} alt={item.name} /> */}
                                     </div>
-                                    <p className='pl-4  uppercase font-medium text-lg leading-6'>{item.name}</p>
+                                    <p className='pl-4  uppercase font-medium text-lg leading-6 hidden md:block'>{item.name}</p>
                                 </a>
                             )}
                         </div>

@@ -21,13 +21,45 @@
 
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
   font-family: var(--font-gilory) ;
-  color: #000;
+  color: var(--color-secondary);
 
 }
 
+/* footer social icons */
+.socialIcons:hover div{
+  border-color:#fff
+}
+.socialIcons:hover svg path {
+  fill: #fff;
+}
 
+/* tabs */
+.tab {
+	overflow-y: hidden;
+  opacity: 1;
+	max-height: 300px;  /* approximate max height */
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+.tab.closed{
+  max-height: 0;
+  opacity: 0;
+
+}
+/* menu */
+.megamenu::before{
+  content: " ";
+  position: absolute;
+  background: url('/public/images/arrow-upper.svg');
+  background-repeat: no-repeat;
+  top:0;
+  left:50%;
+  width: 15px;
+  height: 15px;
+}
 
 
 /* rating */
@@ -47,7 +79,7 @@ padding-right: 5px;
 }
 .mySwiper{
 height: 100%;
-max-width: 600px;
+max-width: 1320px;
 padding-bottom: 10px;
 }
 .mySwiper [class^="swiper-button-"]{

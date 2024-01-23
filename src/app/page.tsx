@@ -9,22 +9,23 @@ import IndustriesWeWorkWith from './components/Worksection/IndustriesWeWorkWith'
 import OurWork from './components/Worksection/OurWork'
 import BlogSection from './components/BlogSection/BlogSection'
 import Testimonials from './components/Testimonials/Testimonials'
+import HomePage from './components/AllPages/HomePage'
 // import Demo from './components/Demo'
 
 export default function Home() {
   return (
     <NewLayout>
    
-        
+        <HomePage />
      {/* <Header /> */}
-    <Banner />
+    {/* <Banner  />
     <ImagewithText />
     <ServiceSection />
     <Technologystack />
     <IndustriesWeWorkWith />
     <OurWork />
     <BlogSection />
-    <Testimonials />
+    <Testimonials /> */}
     </NewLayout>
   )
 }
