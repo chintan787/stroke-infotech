@@ -2,6 +2,8 @@ import React from 'react'
 import Banner from '../Banner/Banner'
 import ImagewithText from '../Banner/ImagewithText'
 import Counter from '../Banner/Counter'
+import BoxContent from '../BoxContent/BoxContent'
+import FAQ from '../FAQ/FAQ'
 
 export default function AboutPage() {
 
@@ -22,6 +24,8 @@ export default function AboutPage() {
             <ImagewithText imagePath="/images/About-image-one.png" title="Who We Are" paragraph={imageWidthTextLeft} />
             <ImagewithText imagePath="/images/About-image-two.png" title="What We Do" paragraph={imageWidthTextRight} showImage='right' />
             <Counter background="bg-primary" countcolor="text-white" textcolor="text-white" counterTitle="We've helped businesses increase their revenue on an average by 90% in their first year with us!"   />
+            <BoxContent />
+            <FAQ />
         </>
     )
 }

@@ -56,7 +56,7 @@ export default function Footer() {
                                         <item.icon  /> 
                                         {/* <Image src={item.icon} height={16} width={16} alt={item.name} /> */}
                                     </div>
-                                    <p className='pl-4  uppercase font-medium text-lg leading-6 hidden md:block'>{item.name}</p>
+                                    <p className='pl-4 uppercase font-medium text-lg leading-6 hidden md:block'>{item.name}</p>
                                 </a>
                             )}
                         </div>

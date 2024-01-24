@@ -62,6 +62,24 @@ body {
 }
 
 
+.panel-content {
+  font-size: 20px;
+  /* padding: 0px 14px; */
+  /* margin: 0 40px; */
+  position: relative;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+
+/* .panel:checked ~ .panel-content{
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+} */
+
+
 /* rating */
 .dv-star-rating-star{
 padding-right: 5px;
