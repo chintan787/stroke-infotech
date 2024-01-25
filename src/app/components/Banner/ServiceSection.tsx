@@ -1,5 +1,5 @@
 import React from 'react';
-import WebIcon from '../icons/WebIcon';
+
 import DevelopmentIcon from '../../../../icons/DevelopmentIcon';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import SectionParagraph from '../SectionHeading/SectionParagraph';
