@@ -27,6 +27,5 @@ export default function EcommerceDevelopmentIcon() {
       />
     </defs>
   </svg>
-    
   )
 }

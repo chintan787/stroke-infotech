@@ -18,7 +18,7 @@ export default function AboutPage() {
     const imageWidthTextRight = ["We’re a small team with talented and committed experts that help global brands and enterprises with innovative solutions. For us, the definition of success is providing creative ideas, transparancy and in timely manners.","We’re a small team with talented and committed experts that help global brands and enterprises with innovative solutions. We’re not just a company .","We’re a small team with talented and committed experts that help global brands and enterprises with innovative solutions. We’re not just a company ."]
     return (
         <>
-            <Banner title="About Us" titleclassName="text-primary text-5xl leading-[3.688rem]"
+            <Banner aboutTitle="About Us" 
                 data={bannerData} imgPath="/images/About-Hero-Section.png"
             />
             <ImagewithText imagePath="/images/About-image-one.png" title="Who We Are" paragraph={imageWidthTextLeft} />

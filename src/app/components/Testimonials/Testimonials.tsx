@@ -2,13 +2,11 @@
 import React, { useState } from 'react'
 import SectionHeading from '../SectionHeading/SectionHeading'
 import Image from 'next/image';
-// import StarRatingComponent from 'react-star-rating-component';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-// import './styles.css';
 import { Pagination, Navigation } from 'swiper/modules';
 import StarRating from '../StarRating/StarRating';
 
@@ -30,10 +28,10 @@ export default function Testimonials() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className='my-10 flex flex-col lg:flex-row gap-12 justify-between items-start'>
+            <div className='my-10 flex flex-col lg:flex-row gap-10 lg:gap-12 justify-between items-start'>
 
-              <div className='w-full lg:w-2/5'> {/* w-2/4 */}
-                <h3 className='font-secondaryFont text-2xl text-black font-bold'>Dev Staff Augmentation for Flight & Hotels Management System</h3>
+              <div className='w-full lg:w-2/5'>
+                <h3 className='font-secondaryFont text-xl md:text-2xl text-black font-bold'>Dev Staff Augmentation for Flight & Hotels Management System</h3>
 
                 <div className='my-8'>
                   <div className='flex items-center my-2'>
@@ -60,187 +58,32 @@ export default function Testimonials() {
 
 
               <div className='w-full lg:w-1/2  pt-0.5'>
-                {/* <Swiper
-              pagination={{
-                type: 'fraction',
-              }}
-              navigation={true}
-              loop={true}
-              modules={[Pagination, Navigation]}
-              className="mySwiper"
-            > */}
-                {/* <SwiperSlide> */}
-                <div className='bg-lightRed max-w-[590px] ml-auto  p-8 rounded-[20px]'>
-                  <StarRating />
-                  <h4 className='font-bold text-[32px] leading-[42px] mt-2 mb-6 text-black'>“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
-                  <div className='flex items-center'>
-                    <Image src="/images/Dp.png" height={74} width={74} className='w-[75px] h-[75px] rounded-full' alt='profile' />
-                    <div className='pl-4'>
-                      <h4 className="font-secondaryFont font-semibold text-lg leading-[22px] mb-2 text-black">Daniel Dandemar</h4>
-                      <p className="font-secondaryFont text-sm leading-[15px] font-normal mb-1 text-black">Tech Manager</p>
-                      <p className="font-secondaryFont text-sm leading-[15px] font-normal text-black">Nordic Leisure Travel Group</p>
-                    </div>
-                  </div>
-                </div>
-                {/* </SwiperSlide> */}
-                {/* 
-              <SwiperSlide>
-                <div className='bg-lightRed max-w-[600px] p-8 rounded-[20px]'>
-                <StarRating />
 
-                  <h4 className='font-bold text-[32px] leading-[42px] mt-2 mb-6'>“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
+                <div className='bg-lightRed max-w-[590px] ml-auto mr-auto lg:ml-auto lg:mr-0  p-6 md:p-8 rounded-[20px]'>
+                  <StarRating />
+                  <h4 className='font-bold text-2xl md:text-[2rem] leading-[2.125rem] md:leading-[2.625rem] mt-2 mb-6 text-black'>“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
                   <div className='flex items-center'>
-                    <Image src="/images/Dp.png" height={74} width={74} className='w-[75px] h-[75px] rounded-full' alt='profile' />
+                    <Image src="/images/Dp.png" height={74} width={74} className='w-[65px] md:w-[75px] h-[65px] md:h-[75px] rounded-full' alt='profile' />
                     <div className='pl-4'>
-                      <h4 className="font-secondaryFont font-semibold text-lg leading-[22px] mb-2">Daniel Dandemar</h4>
-                      <p className="font-secondaryFont text-sm leading-[15px] font-normal mb-1">Tech Manager</p>
-                      <p className="font-secondaryFont text-sm leading-[15px] font-normal">Nordic Leisure Travel Group</p>
+                      <h4 className="font-secondaryFont font-semibold text-base md:text-lg  leading-5 md:leading-[1.375rem] mb-2 text-black">Daniel Dandemar</h4>
+                      <p className="font-secondaryFont text-sm leading-[0.938rem] font-normal mb-1 text-black">Tech Manager</p>
+                      <p className="font-secondaryFont text-sm leading-[0.938rem] font-normal text-black">Nordic Leisure Travel Group</p>
                     </div>
                   </div>
                 </div>
-              </SwiperSlide> */}
 
                 <div className='flex items-center justify-end max-w-[600px] my-6'>
-                  {/* <button className='bg-lightRed w-[52px] h-[52px] rounded-full flex justify-center items-center '><Image src="/images/Previous-arrow.svg" height={18} width={14} alt='previous' /></button> */}
-                  {/* <p className='text-primary font-secondaryFont font-medium text-lg leading-[21px] mx-6'>1/5</p> */}
-                  {/* <button className='bg-lightRed w-[52px] h-[52px] rounded-full flex justify-center items-center ' ><Image src="/images/Next-arrow.svg" height={18} width={14} alt='next' /></button> */}
                 </div>
 
-                {/* </Swiper> */}
-              </div>
-            </div>
-          </SwiperSlide>
-
-{/* 
-          <SwiperSlide>
-            <div className='my-10 flex flex-col lg:flex-row gap-12 justify-between items-start'>
-              <div className='w-full lg:w-2/5'> 
-                <h3 className='font-secondaryFont text-2xl text-black font-bold'>Dev Staff Augmentation for Flight & Hotels Management System</h3>
-                <div className='my-8'>
-                  <div className='flex items-center my-2'>
-                    <Image src="/images/Ellipse-7.png" height={16} width={16} alt={''} className='w-4 h-4' />
-                    <p className='font-secondaryFont text-sm font-normal text-black text-black pl-4'>Sweden</p>
-                  </div>
-                  <div className='flex items-center my-2'>
-                    <Image src="/images/travel-icon-1.png" height={16} width={16} alt={''} className='w-4 h-4' />
-                    <p className='font-secondaryFont text-sm font-normal text-black pl-4'>Leisure, Travel, & Tourism</p>
-                  </div>
-                </div>
-                <div className='mb-4 w-3/4'>
-                  <h6 className="font-secondaryFont font-semibold text-base leading-[25px] text-black">Project summary:</h6>
-                  <p className='font-secondaryFont text-sm leading-6 font-normal text-black'>To scale and augment internal development teams, pwrteams provided resources to help develop a travel system to manage flights and hotels. The tech stack includes AngularJS, C#, SQL, and RabbitMQ.</p>
-                </div>
-                <div className='mb-4 w-3/4'>
-                  <h6 className="font-secondaryFont font-semibold text-base leading-[25px]  text-black">Feedback summary:</h6>
-                  <p className='font-secondaryFont text-sm leading-6 font-normal text-black'>pwrteams has helped deliver on a major project along with some minor ones. They're able to adapt well to client feedback and treat the relationship as a two-way street.</p>
-                </div>
-              </div>
-
-              <div className='w-full lg:w-1/2 self-end pt-0.5'>
-                <div className='bg-lightRed max-w-[590px] ml-auto  p-8 rounded-[20px]'>
-                  <StarRating />
-                  <h4 className='font-bold text-[32px] leading-[42px] mt-2 mb-6 text-black'>“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
-                  <div className='flex items-center'>
-                    <Image src="/images/Dp.png" height={74} width={74} className='w-[75px] h-[75px] rounded-full' alt='profile' />
-                    <div className='pl-4'>
-                      <h4 className="font-secondaryFont font-semibold text-lg leading-[22px] mb-2 text-black">Daniel Dandemar</h4>
-                      <p className="font-secondaryFont text-sm leading-[15px] font-normal mb-1 text-black">Tech Manager</p>
-                      <p className="font-secondaryFont text-sm leading-[15px] font-normal text-black">Nordic Leisure Travel Group</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className='my-10 flex flex-col lg:flex-row gap-12 justify-between items-start'>
-              <div className='w-full lg:w-2/5'> 
-                <h3 className='font-secondaryFont text-2xl text-black font-bold'>Dev Staff Augmentation for Flight & Hotels Management System</h3>
-                <div className='my-8'>
-                  <div className='flex items-center my-2'>
-                    <Image src="/images/Ellipse-7.png" height={16} width={16} alt={''} className='w-4 h-4' />
-                    <p className='font-secondaryFont text-sm font-normal text-black text-black pl-4'>Sweden</p>
-                  </div>
-                  <div className='flex items-center my-2'>
-                    <Image src="/images/travel-icon-1.png" height={16} width={16} alt={''} className='w-4 h-4' />
-                    <p className='font-secondaryFont text-sm font-normal text-black pl-4'>Leisure, Travel, & Tourism</p>
-                  </div>
-                </div>
-                <div className='mb-4 w-3/4'>
-                  <h6 className="font-secondaryFont font-semibold text-base leading-[25px] text-black">Project summary:</h6>
-                  <p className='font-secondaryFont text-sm leading-6 font-normal text-black'>To scale and augment internal development teams, pwrteams provided resources to help develop a travel system to manage flights and hotels. The tech stack includes AngularJS, C#, SQL, and RabbitMQ.</p>
-                </div>
-                <div className='mb-4 w-3/4'>
-                  <h6 className="font-secondaryFont font-semibold text-base leading-[25px]  text-black">Feedback summary:</h6>
-                  <p className='font-secondaryFont text-sm leading-6 font-normal text-black'>pwrteams has helped deliver on a major project along with some minor ones. They're able to adapt well to client feedback and treat the relationship as a two-way street.</p>
-                </div>
-              </div>
-
-              <div className='w-full lg:w-1/2 self-end pt-0.5'>
-                <div className='bg-lightRed max-w-[590px] ml-auto  p-8 rounded-[20px]'>
-                  <StarRating />
-                  <h4 className='font-bold text-[32px] leading-[42px] mt-2 mb-6 text-black'>“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
-                  <div className='flex items-center'>
-                    <Image src="/images/Dp.png" height={74} width={74} className='w-[75px] h-[75px] rounded-full' alt='profile' />
-                    <div className='pl-4'>
-                      <h4 className="font-secondaryFont font-semibold text-lg leading-[22px] mb-2 text-black">Daniel Dandemar</h4>
-                      <p className="font-secondaryFont text-sm leading-[15px] font-normal mb-1 text-black">Tech Manager</p>
-                      <p className="font-secondaryFont text-sm leading-[15px] font-normal text-black">Nordic Leisure Travel Group</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className='my-10 flex flex-col lg:flex-row gap-12 justify-between items-start'>
-              <div className='w-full lg:w-2/5'> 
-                <h3 className='font-secondaryFont text-2xl text-black font-bold'>Dev Staff Augmentation for Flight & Hotels Management System</h3>
-                <div className='my-8'>
-                  <div className='flex items-center my-2'>
-                    <Image src="/images/Ellipse-7.png" height={16} width={16} alt={''} className='w-4 h-4' />
-                    <p className='font-secondaryFont text-sm font-normal text-black text-black pl-4'>Sweden</p>
-                  </div>
-                  <div className='flex items-center my-2'>
-                    <Image src="/images/travel-icon-1.png" height={16} width={16} alt={''} className='w-4 h-4' />
-                    <p className='font-secondaryFont text-sm font-normal text-black pl-4'>Leisure, Travel, & Tourism</p>
-                  </div>
-                </div>
-                <div className='mb-4 w-3/4'>
-                  <h6 className="font-secondaryFont font-semibold text-base leading-[25px] text-black">Project summary:</h6>
-                  <p className='font-secondaryFont text-sm leading-6 font-normal text-black'>To scale and augment internal development teams, pwrteams provided resources to help develop a travel system to manage flights and hotels. The tech stack includes AngularJS, C#, SQL, and RabbitMQ.</p>
-                </div>
-                <div className='mb-4 w-3/4'>
-                  <h6 className="font-secondaryFont font-semibold text-base leading-[25px]  text-black">Feedback summary:</h6>
-                  <p className='font-secondaryFont text-sm leading-6 font-normal text-black'>pwrteams has helped deliver on a major project along with some minor ones. They're able to adapt well to client feedback and treat the relationship as a two-way street.</p>
-                </div>
-              </div>
-
-              <div className='w-full lg:w-1/2 self-end pt-0.5'>
-                <div className='bg-lightRed max-w-[590px] ml-auto  p-8 rounded-[20px]'>
-                  <StarRating />
-                  <h4 className='font-bold text-[32px] leading-[42px] mt-2 mb-6 text-black'>“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
-                  <div className='flex items-center'>
-                    <Image src="/images/Dp.png" height={74} width={74} className='w-[75px] h-[75px] rounded-full' alt='profile' />
-                    <div className='pl-4'>
-                      <h4 className="font-secondaryFont font-semibold text-lg leading-[22px] mb-2 text-black">Daniel Dandemar</h4>
-                      <p className="font-secondaryFont text-sm leading-[15px] font-normal mb-1 text-black">Tech Manager</p>
-                      <p className="font-secondaryFont text-sm leading-[15px] font-normal text-black">Nordic Leisure Travel Group</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide> */}
-
-
-          <SwiperSlide>
-            <div className='my-10 flex flex-col lg:flex-row gap-12 justify-between items-start'>
+            <div className='my-10 flex flex-col lg:flex-row gap-10 lg:gap-12 justify-between items-start'>
 
               <div className='w-full lg:w-2/5'>
-                <h3 className='font-secondaryFont text-2xl text-black font-bold'>Dev Staff Augmentation for Flight & Hotels Management System</h3>
+                <h3 className='font-secondaryFont text-xl md:text-2xl text-black font-bold'>Dev Staff Augmentation for Flight & Hotels Management System</h3>
 
                 <div className='my-8'>
                   <div className='flex items-center my-2'>
@@ -266,31 +109,33 @@ export default function Testimonials() {
               </div>
 
 
-              <div className='w-full lg:w-1/2 pt-0.5'>
+              <div className='w-full lg:w-1/2  pt-0.5'>
 
-                <div className='bg-lightRed max-w-[590px] ml-auto p-8 rounded-[20px]'>
+                <div className='bg-lightRed max-w-[590px] ml-auto mr-auto lg:ml-auto lg:mr-0  p-6 md:p-8 rounded-[20px]'>
                   <StarRating />
-                  <h4 className='font-bold text-[32px] leading-[42px] mt-2 mb-6 text-black'>“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
+                  <h4 className='font-bold text-2xl md:text-[2rem] leading-[2.125rem] md:leading-[2.625rem] mt-2 mb-6 text-black'>“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
                   <div className='flex items-center'>
-                    <Image src="/images/Dp.png" height={74} width={74} className='w-[75px] h-[75px] rounded-full' alt='profile' />
+                    <Image src="/images/Dp.png" height={74} width={74} className='w-[65px] md:w-[75px] h-[65px] md:h-[75px] rounded-full' alt='profile' />
                     <div className='pl-4'>
-                      <h4 className="font-secondaryFont font-semibold text-lg leading-[22px] mb-2 text-black">Daniel Dandemar</h4>
-                      <p className="font-secondaryFont text-sm leading-[15px] font-normal mb-1 text-black">Tech Manager</p>
-                      <p className="font-secondaryFont text-sm leading-[15px] font-normal text-black">Nordic Leisure Travel Group</p>
+                      <h4 className="font-secondaryFont font-semibold text-base md:text-lg  leading-5 md:leading-[1.375rem] mb-2 text-black">Daniel Dandemar</h4>
+                      <p className="font-secondaryFont text-sm leading-[0.938rem] font-normal mb-1 text-black">Tech Manager</p>
+                      <p className="font-secondaryFont text-sm leading-[0.938rem] font-normal text-black">Nordic Leisure Travel Group</p>
                     </div>
                   </div>
                 </div>
 
+                <div className='flex items-center justify-end max-w-[600px] my-6'>
+                </div>
 
               </div>
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className='my-10 flex flex-col lg:flex-row gap-12 justify-between items-start'>
+            <div className='my-10 flex flex-col lg:flex-row gap-10 lg:gap-12 justify-between items-start'>
 
               <div className='w-full lg:w-2/5'>
-                <h3 className='font-secondaryFont text-2xl text-black font-bold'>Dev Staff Augmentation for Flight & Hotels Management System</h3>
+                <h3 className='font-secondaryFont text-xl md:text-2xl text-black font-bold'>Dev Staff Augmentation for Flight & Hotels Management System</h3>
 
                 <div className='my-8'>
                   <div className='flex items-center my-2'>
@@ -316,21 +161,23 @@ export default function Testimonials() {
               </div>
 
 
-              <div className='w-full lg:w-1/2 pt-0.5'>
+              <div className='w-full lg:w-1/2  pt-0.5'>
 
-                <div className='bg-lightRed max-w-[590px] ml-auto p-8 rounded-[20px]'>
+                <div className='bg-lightRed max-w-[590px] ml-auto mr-auto lg:ml-auto lg:mr-0  p-6 md:p-8 rounded-[20px]'>
                   <StarRating />
-                  <h4 className='font-bold text-[32px] leading-[42px] mt-2 mb-6 text-black'>“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
+                  <h4 className='font-bold text-2xl md:text-[2rem] leading-[2.125rem] md:leading-[2.625rem] mt-2 mb-6 text-black'>“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
                   <div className='flex items-center'>
-                    <Image src="/images/Dp.png" height={74} width={74} className='w-[75px] h-[75px] rounded-full' alt='profile' />
+                    <Image src="/images/Dp.png" height={74} width={74} className='w-[65px] md:w-[75px] h-[65px] md:h-[75px] rounded-full' alt='profile' />
                     <div className='pl-4'>
-                      <h4 className="font-secondaryFont font-semibold text-lg leading-[22px] mb-2 text-black">Daniel Dandemar</h4>
-                      <p className="font-secondaryFont text-sm leading-[15px] font-normal mb-1 text-black">Tech Manager</p>
-                      <p className="font-secondaryFont text-sm leading-[15px] font-normal text-black">Nordic Leisure Travel Group</p>
+                      <h4 className="font-secondaryFont font-semibold text-base md:text-lg  leading-5 md:leading-[1.375rem] mb-2 text-black">Daniel Dandemar</h4>
+                      <p className="font-secondaryFont text-sm leading-[0.938rem] font-normal mb-1 text-black">Tech Manager</p>
+                      <p className="font-secondaryFont text-sm leading-[0.938rem] font-normal text-black">Nordic Leisure Travel Group</p>
                     </div>
                   </div>
                 </div>
 
+                <div className='flex items-center justify-end max-w-[600px] my-6'>
+                </div>
 
               </div>
             </div>

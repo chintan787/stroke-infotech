@@ -36,7 +36,7 @@ export default function FAQ() {
                     <SectionHeading title="Frequently Asked Questions" color="text-secondary" />
                 </div>
                 {/* <div className="grid grid-cols-2 gap-10 py-12"> */}
-                <ul className="grid grid-cols-2 gap-10 py-12">
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-10 py-12">
                     {faqData.map((item,index) =>
                         <li className="flex items-center bg-lightRed rounded-[20px] p-6" onClick={() => { handleActiveLink(item.id) }}>
                             <div>

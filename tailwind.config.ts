@@ -2,20 +2,21 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     colors:{
-      primary:'var(--color-primary)',
-      secondary:'var(--color-secondary)',
-      white:'#fff',
+      primary:"var(--color-primary)",
+      secondary:"var(--color-secondary)",
+      white:"#fff",
       // black:'#000',
-      black:'var(--color-secondary)',
+      black:"var(--color-secondary)",
       gray:'#ccc',
+      // lightRed:"#FF2449",
       lightRed:'#fff9fa',
-      blue:'#14133B',
+      blue:"#14133B",
       
     },
     container:{
@@ -29,16 +30,7 @@ const config: Config = {
   //  }
 
     },
-    // maxWidth:{
-    //   xs: '320px',
-    //   sm:'384px',
-    //   md:'448px',
-    //   lg:'512px',
-    //   xl:'576px',
-    //   '2xl':'672px',
-    //   '3xl' :'768px',
-    //   '8xl' : '1320px'
-    // },
+
     extend: {
       fontFamily:{
         gilroy: ["var(--font-gilory)","system-ui", "sans-serif"],
@@ -46,13 +38,9 @@ const config: Config = {
         primaryFont:["var(--font-gilory)","system-ui", "sans-serif"],
         secondaryFont:["var(--font-outfit)","system-ui", "sans-serif"],
         outfitFont:["var(--font-outfit)","system-ui", "sans-serif"]
-        // default: ["var(--font)","sans-serif"],
+       
       }
-      // backgroundImage: {
-      //   'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-      //   'gradient-conic':
-      //     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      // },
+      
     },
   },
   plugins: [],

@@ -17,6 +17,7 @@ import ChevronDownIcon from '../../../../icons/ChevronDownIcon'
 import XMarkIcon from '../../../../icons/XMarkIcon'
 import ChevronRightIcon from '../../../../icons/ChevronRightIcon'
 import ArrowUpperIcon from '../../../../icons/ArrowUpperIcon'
+import Link from 'next/link'
 
 const products = [
     { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', },
@@ -58,8 +59,6 @@ const megamenuTitles = [
     { title: "Website Maintenance" },
     { title: "Hire Dedicated Developers" },
 
-
-
     // "UI/UX Designer", "CMS & Ecommerce", "Web Development", "Mobile App Development", "Website Maintenance", "Hire Dedicated Developers"
 ]
 
@@ -75,10 +74,11 @@ export default function Header() {
             <nav className="mx-auto flex max-w-[1320px] items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex ">
                     {/* lg:flex-1 */}
-                    <a href="#" className="-m-1.5 p-1.5">
+                    <Link href="#" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
                         <Image
                             src="/images/Clip-path-group.svg"
+                            // src="/images/stroke-final-logo.png"
                             alt="Logo"
                             className="lg:h-8 2xl:h-10 w-auto"
                             width={100}
@@ -93,8 +93,8 @@ export default function Header() {
               height={24}
               priority
             /> */}
-                        {/* <img className="h-8 w-auto" src="/images/Clip-path-group.svg" alt="" /> */}
-                    </a>
+                       
+                    </Link>
                 </div>
                 <div className="flex lg:hidden">
                     <button
@@ -110,12 +110,12 @@ export default function Header() {
                     </button>
                 </div>
                 <Popover.Group className="hidden lg:flex lg:gap-x-9 2xl:gap-x-12 items-center">
-                    <a href="#" className="font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
+                    <Link href="#" className="font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
                         Home
-                    </a>
-                    <a href="#" className="font-gilroy text-[0.938rem] font-medium leading-[1.125rem]  text-secondary">
+                    </Link>
+                    <Link href="#" className="font-gilroy text-[0.938rem] font-medium leading-[1.125rem]  text-secondary">
                         Our Work
-                    </a>
+                    </Link>
 
                     <Popover className="relative">
                         <Popover.Button className="font-gilroy flex items-center gap-x-1 text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
@@ -185,12 +185,15 @@ export default function Header() {
                         </Transition>
                     </Popover>
 
-                    <a href="#" className="font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
+                    <Link href="#" className="font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
                         Blog
-                    </a>
-                    <a href="#" className="font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
+                    </Link>
+                    <Link href="/about" className="font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
+                    About
+                    </Link>
+                    {/* <a href="/about" className="font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
                         About
-                    </a>
+                    </a> */}
 
                 </Popover.Group>
                 <div className="hidden lg:flex  lg:justify-end gap-4">
@@ -226,7 +229,7 @@ export default function Header() {
                 <div className="fixed inset-0 z-10" />
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
-                        <a href="#" className="-m-1.5 p-1.5">
+                        <Link href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
                             {/* <img
                                 className="h-8 w-auto"
@@ -241,7 +244,7 @@ export default function Header() {
                                 height={38}
                                 priority
                             />
-                        </a>
+                        </Link>
                         <button
                             type="button"
                             className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -253,21 +256,21 @@ export default function Header() {
                         </button>
                     </div>
                     <div className="mt-6 flow-root">
-                        <div className="-my-6 divide-y divide-gray-500/10">
+                        <div className="-my-6 divide-y divide-primary">
                             <div className="space-y-2 py-6">
 
-                                <a
+                                <Link
                                     href="#"
                                     className="-mx-3 block rounded-lg px-3 py-2 font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:bg-gray-50"
                                 >
                                     Home
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="#"
                                     className="-mx-3 block rounded-lg px-3 py-2 font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:bg-gray-50"
                                 >
                                     Our Work
-                                </a>
+                                </Link>
 
                                 <Disclosure as="div" className="-mx-3">
                                     {({ }) => (
@@ -287,7 +290,7 @@ export default function Header() {
                                                     <Disclosure.Button
                                                         key={item.title}
                                                         as="a"
-                                                        className="block rounded-lg py-2 pl-6 pr-3 font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary  hover:text-primary"
+                                                        className="block rounded-lg py-2 pl-6 pr-3 font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:text-primary"
                                                     >
                                                         {item.title}
                                                     </Disclosure.Button>
@@ -314,7 +317,7 @@ export default function Header() {
                                     Blog
                                 </a>
                                 <a
-                                    href="#"
+                                    href="/about"
                                     className="-mx-3 block rounded-lg px-3 py-2 font-gilroy text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:bg-gray-50"
                                 >
                                     About

@@ -17,7 +17,7 @@ export default function HomePage() {
 
   return (
     <>
-      <Banner title="Scale your enterprise with cross-border teams" titleclassName="text-secondary text-[4rem] leading-[4.375rem]"
+      <Banner title="Scale your enterprise with cross-border teams"
         button="Read More" data={bannerData} imgPath="/images/Hero-section.png"
       />
       <ImagewithText imagePath="/images/About-Section.png" title="A software company with specialized developers and engineers in technologies" paragraph={imageWithTextData} />

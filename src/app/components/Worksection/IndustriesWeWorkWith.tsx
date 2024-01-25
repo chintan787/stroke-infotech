@@ -30,7 +30,7 @@ export default function IndustriesWeWorkWith() {
                 </div>
                 {/* <p className="font-montserrat font-regular text-black my-6 text-lg leading-[30px] text-center">Latest and Greatest Services</p> */}
                 
-                <div className='grid grid-rows-4 md:grid-rows-2 grid-flow-col gap-14 my-16 pt-20'>
+                <div className='grid grid-rows-4 md:grid-rows-2 grid-flow-col gap-14 my-16 pt-16'>
                     {work.map((i) =>
                     <div className='flex flex-col justify-center items-center hover:bg-white py-4 '>
                         <img src={i.icon} />

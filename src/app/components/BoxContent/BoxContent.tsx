@@ -48,7 +48,7 @@ export default function BoxContent() {
                     </div>
 
                     {/*  */}
-                    <div className='pt-12 pb-8 flex gap-12 xl:gap-20'>
+                    <div className='pt-12 pb-8 block md:flex gap-12 xl:gap-20'>
                         {info.map((item, index) =>
                             <div key={index} className="w-4/12">
                                 <item.icon />
