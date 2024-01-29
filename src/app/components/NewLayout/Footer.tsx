@@ -51,14 +51,12 @@ export default function Footer() {
                     <div className='max-w-[1320px] mx-auto '>
 
                         <div className=' w-full justify-evenly items-center flex'>
-                            {socialIcons.map((item,index) =>
-                                <Link href='#' className={`socialIcons flex items-center w-1/2 md:w-1/4 justify-center ${socialIcons.length - 1 === index ? 'border-r-0' : 'border-r'} border-r-primary py-4 bg-white hover:bg-primary text-primary hover:text-white`}>
+                            {socialIcons.map((item, index) =>
+                                <Link href='#' className={`socialIcons font-nunitoFont flex items-center w-1/2 md:w-1/4 justify-center ${socialIcons.length - 1 === index ? 'border-r-0' : 'border-r'} border-r-primary py-4 bg-white hover:bg-primary text-primary hover:text-white`}>
                                     <div className='border border-primary rounded-[10px] w-10 h-10 flex items-center justify-center'>
-                                    {/* w-8 sm:w-10 h-8 sm:h-10 px-[10px] sm:px-0 */}
-                                        <item.icon  /> 
-                                        {/* <Image src={item.icon} height={16} width={16} alt={item.name} className='h-[14px] md:h-[16px] w-[14px] md:w-[16px]' /> */}
+                                        <item.icon />
                                     </div>
-                                    <p className='pl-4 uppercase font-medium text-lg leading-6 hidden md:block'>{item.name}</p>
+                                    <p className=' tracking-[0.225rem] pl-4 uppercase font-medium text-lg leading-6 hidden md:block'>{item.name}</p>
                                 </Link>
                             )}
                         </div>
@@ -76,9 +74,9 @@ export default function Footer() {
 
                     <div className="md:max-w-md lg:col-span-2 ">
                         <Link rel="noopener noreferrer" href="#" className="flex space-x-3 justify-start">
-                            <Image src="/images/Footer/Stroke-Infotech-footer-logo.svg"
-                            // src="/images/Footer/footer-logo.png" 
-                            height={34} width={169} alt='logo' />
+                            <Image src="/images/stroke-footer-logo.svg"
+                                // src="/images/Footer/footer-logo.png" 
+                                height={50} width={169} alt='logo' />
                         </Link>
                         <div className="mt-3 ">
                             <div className='w-[80%] text-left'>
@@ -145,7 +143,7 @@ export default function Footer() {
                         </div>
 
                     </div>
-                  
+
                 </div>
                 <div className='max-w-[1320px] mx-auto'>
                     <div className="py-6 text-sm text-center text-white border-t border-t-[#B9B9B926] text-medium  text-xs">© Copyright 2024 <Link href='#' className='text-primary'>Stroke Infotech</Link> - All rights reserved.</div>
@@ -155,7 +153,7 @@ export default function Footer() {
 
 
 
-         
+
         </>
     )
 }

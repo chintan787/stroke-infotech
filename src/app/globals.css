@@ -23,7 +23,7 @@
 
 body {
   /* color: rgb(var(--foreground-rgb)); */
-  font-family: var(--font-gilory);
+  font-family: var(--font-poppins);
   color: var(--color-secondary);
 
 }
@@ -49,23 +49,6 @@ body {
   height: 15px;
 }
 
-
-.panel-content {
-  font-size: 20px;
-  /* padding: 0px 14px; */
-  /* margin: 0 40px; */
-  position: relative;
-  -webkit-transition: .4s ease;
-  -moz-transition: .4s ease;
-  -o-transition: .4s ease;
-  transition: .4s ease;
-}
-
-/* .panel:checked ~ .panel-content{
-  height: auto;
-  opacity: 1;
-  padding: 14px;
-} */
 
 
 /* rating */
@@ -170,40 +153,6 @@ right:28%;
 }
 }
 
-@media (max-width:1024px) {
-  .swiper.mySwiper {
-    /* padding-bottom: 15px; */
-  }
-
-  .swiper .swiper-pagination {
-    /* bottom: 15px; */
-  }
-}
-
-/* .slick-slider{
-  height: auto;
-} */
-/* .slick-initialized .slick-track{
-  display: flex;
-
-  
-}
-.slick-slider.slick-initialized {
-  display: flex;
-  height: auto;
-  align-items: center; 
-  justify-content: center;
-  height: 100%;
-}
-
-.slick-slider .slick-list,
-.slick-slider .slick-track,
-.slick-slider .slick-slide > div
-.slick-slider .slick-slide div div
-{
-  height: 100%;
-} */
-
 
 
 .slick-slider.slick-initialized{
@@ -213,21 +162,40 @@ right:28%;
   border-radius: 20px;
 }
 .slick-slider .slick-dots{
-  bottom: -39px;
+  bottom: -33px;
 }
-.slick-slider .slick-dots li.slick-active button:before{
-  background-color: #FF2449;
-  opacity: 1;
+.slick-slider .slick-slide{
+  transition: all 0.3s;
+}
+.slick-slider .slick-dots li,
+.slick-slider.slick-dots li button{
+  width: 15px;
+  height: 15px;
+}
+.slick-slider .slick-dots li button:before{
+  height: 15px;
+  width: 15px;
+}
+.slick-slider .slick-dots li.slick-active,
+.slick-slider.slick-dots li.slick-active button{
+  width:60px;
 }
 .slick-slider .slick-dots li button:before{
   font-size: 0px;
   border:1px solid #FF2449;
-  border-radius: 100%;
+  border-radius: 12px;
   background-color: #fff;
   opacity: 1;
+  transition: opacity 0.5s, background-color 0.5s, width 0.5s;
+  transition-delay: 0.5s, 0.5s, 0s;
 }
 
-
-
+.slick-slider .slick-dots li.slick-active button:before{
+  background-color: #FF2449;
+  opacity: 1;
+  width: 60px;
+  transition-delay: 0s;
+  border-radius: 12px;
+}
 
 

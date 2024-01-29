@@ -20,7 +20,7 @@ export default function Counter({ background, countcolor, textcolor,counterTitle
                 <div className='px-6 pb-6 lg:px-10 lg:pb-10 flex flex-col md:flex-row text-center items-center justify-center gap-10 md:gap-20 lg:gap-40 '>
                     {count.map((item) =>
                         <div>
-                            <h2 className={`${countcolor} text-6xl md:text-7xl leading-[4.125rem] md:leading-[4.75rem] font-bold text-center`}>{item.total}</h2>
+                            <h2 className={`${countcolor} text-6xl md:text-7xl leading-[4.125rem] md:leading-[4.75rem] font-bold text-center font-primaryFont`}>{item.total}</h2>
                             <p className={`${textcolor} font-secondaryFont text-lg md:text-xl  font-semibold mt-4 text-black`}>{item.name}</p>
                         </div>
                     )}

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import {Montserrat} from 'next/font/google';
-import {Plus_Jakarta_Sans} from 'next/font/google';
-import {Outfit} from 'next/font/google'
+import { Inter, Nunito,PT_Sans } from 'next/font/google'
+import { Poppins } from 'next/font/google';
+import { Plus_Jakarta_Sans } from 'next/font/google';
+import { Outfit } from 'next/font/google'
 import './globals.css';
 import localFont from 'next/font/local';
 
@@ -26,20 +26,37 @@ const Gilory = localFont({
       weight: '700',
     },
   ],
-  variable:'--font-gilory'
+  variable: '--font-gilory'
 })
 
-const monts = Montserrat({ 
-  variable:'--font-montserrat',
-  subsets: ['latin'] })
 
-  const plus = Plus_Jakarta_Sans({ 
-    variable:'--font-plus-Jakarta-Sans',
-    subsets: ['latin'] })
 
-    const outfit = Outfit({ 
-      variable:'--font-outfit',
-      subsets: ['latin'] })
+const plus = Plus_Jakarta_Sans({
+  variable: '--font-plus-Jakarta-Sans',
+  subsets: ['latin']
+})
+
+const outfit = Outfit({
+  variable: '--font-outfit',
+  subsets: ['latin']
+})
+
+const poppins = Poppins({
+  variable: '--font-poppins',
+  subsets: ['latin'],
+  weight:['100','200','300','400','500','600','700','800','900']
+})
+const ptSans = PT_Sans({
+  variable: '--font-ptSans',
+  subsets: ['latin'],
+  weight:['400','700']
+})
+
+const nunito = Nunito({
+  variable: '--font-nunito',
+  subsets: ['latin'],
+  weight:['200','300','400','500','600','700','800','900']
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -53,7 +70,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${Gilory.variable} ${monts.variable} ${plus.variable} ${outfit.variable}`}>{children}</body>
+      <body className={`${Gilory.variable} ${plus.variable} ${outfit.variable} ${poppins.variable} ${ptSans.variable} ${nunito.variable}`}>{children}</body>
     </html>
   )
 }

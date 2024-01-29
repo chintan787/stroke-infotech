@@ -25,17 +25,17 @@ export default function BoxContent() {
     return (
         <div className="my-16 px-6 sm:px-10">
             <div className="max-w-[1320px] mx-auto ">
-                <div className="bg-lightRed p-14 rounded-[25px]">
+                <div className="bg-lightRed p-10 lg:p-14 rounded-[25px]">
                     {/* first section */}
-                    <div className='flex justify-between gap-20 overflow-hidden pb-12'>
-                        <div className='w-3/5'>
+                    <div className='flex flex-col md:flex-row justify-between gap-20 overflow-hidden pb-12'>
+                        <div className='w-full md:w-3/5'>
                             <SectionHeading title="Why Choose Stroke Infotech For Your Innovative Service" color="text-secondary" />
                             <SectionParagraph text="Founded by a team of specialists in cyber security, consultancy and information security, we are a trusted cyber security company with a passion for quality service. Our mission is to provide cyber security services and training that extends beyond technology to encompass people, culture." />
-                            <button className='bg-primary text-white font-medium px-7 py-3 text-lg leading-[1.875rem] rounded-[50px] flex justify-center items-center'>
+                            <button className='bg-primary text-white font-medium px-4 md:px-7 py-2 md:py-3 text-base md:text-lg leading-7 md:leading-[1.875rem] rounded-[50px] flex justify-center items-center'>
                                 Get a Quote
                             </button>
                         </div>
-                        <div className='w-2/5 grid grid-cols-3   max-h-[350px] '>
+                        <div className='w-full md:w-2/5 grid grid-cols-3 max-h-[350px] '>
                             {allimages.map((item, index) =>
                                 <div key={index} className={`${item.alignSelf} grid gap-4 justify-center `}>
                                     {item.frame.map((list) =>
@@ -48,12 +48,12 @@ export default function BoxContent() {
                     </div>
 
                     {/*  */}
-                    <div className='pt-12 pb-8 block md:flex gap-12 xl:gap-20'>
+                    <div className='pt-12 pb-8 flex flex-wrap md:flex-nowrap gap-6 md:gap-4 lg:gap-12 xl:gap-20'>
                         {info.map((item, index) =>
-                            <div key={index} className="w-4/12">
+                            <div key={index} className="w-full sm:w-5/12 md:w-4/12">
                                 <item.icon />
-                                <h4 className='text-[1.5rem] leading-10 font-semibold' >{item.title}</h4>
-                                <p className='font-secondaryFont font-normal text-lg leading-[1.875rem]'>{item.paragraph}</p>
+                                <h4 className='text-xl lg:text-[1.625rem] leading-10 font-semibold' >{item.title}</h4>
+                                <p className='font-secondaryFont font-normal text-base lg:text-lg leading-[1.875rem]'>{item.paragraph}</p>
                             </div>
                         )}
                     </div>
