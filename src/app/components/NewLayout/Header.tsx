@@ -117,10 +117,11 @@ export default function Header() {
                 <div className="flex ">
                     <Link href="#" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
+                        
                          <Image
                             src="/images/stroke-logo.svg"
                             alt="Logo"
-                            className="h-16 lg:h-14 2xl:h-16 w-auto"
+                            className="h-8 2xl:h-10 w-auto"
                             width={100}
                             height={40}
                             priority
@@ -270,7 +271,7 @@ export default function Header() {
                             <Image
                                 src="/images/stroke-logo.svg"
                                 alt="Logo"
-                                className="h-14 w-auto"
+                                className="h-8 w-auto"
                                 width={100}
                                 height={38}
                                 priority
