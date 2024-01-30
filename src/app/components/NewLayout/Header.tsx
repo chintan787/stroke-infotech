@@ -147,11 +147,11 @@ export default function Header() {
                                         )}
 
                                     </div>
-                                    <div className="w-4/6 p-8 grow self-center overflow-hidden ">
+                                    <div className="w-4/6 p-14 grow self-center overflow-hidden ">
                                         <div>
                                             {megamenuTitles.map((item) =>
                                                 <div
-                                                   className={`grid grid-cols-2 gap-14 ${item.isActive ? 'opacity-100 block' : 'opacity-0 hidden'} overflow-hidden slide-right`}> 
+                                                   className={`grid grid-cols-2 gap-y-8 gap-x-14 ${item.isActive ? 'opacity-100 block' : 'opacity-0 hidden'} overflow-hidden slide-right`}> 
                                                     {/* className={`grid grid-cols-2 gap-14 ${item.isActive ? 'opacity-100 max-h-[800px] lg:max-h-[500px] ' : 'opacity-0 max-h-0'} overflow-hidden transition-all duration-500 ease-in-out`}> */}
 
                                                     {item?.children?.map((list) =>
@@ -256,7 +256,7 @@ export default function Header() {
                                 <Disclosure as="div" className="-mx-3">
                                     {({ }) => (
                                         <>
-                                            <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-1.5 pl-3 pr-3.5 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary ">
+                                            <Disclosure.Button className="flex w-full items-center justify-between focus:outline-none rounded-lg py-1.5 pl-3 pr-3.5 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary ">
                                                 Our Service
                                                 <ChevronDownIcon className="text-primary h-4 w-4" />
                                             </Disclosure.Button>
