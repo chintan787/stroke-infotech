@@ -1,65 +1,30 @@
 "use client"
 import { Fragment, useState } from 'react'
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
-// import {
-//     ArrowPathIcon,
-//     Bars3Icon,
-//     ChartPieIcon,
-//     CursorArrowRaysIcon,
-//     FingerPrintIcon,
-//     SquaresPlusIcon,
-//     XMarkIcon,
-// } from '@heroicons/react/24/outline'
-// import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/24/solid'
+import { Disclosure, Popover, Transition } from '@headlessui/react'
 import Image from 'next/image'
 import MenuIcon from '../../../../icons/MenuIcon'
 import ChevronDownIcon from '../../../../icons/ChevronDownIcon'
 import XMarkIcon from '../../../../icons/XMarkIcon'
 import ChevronRightIcon from '../../../../icons/ChevronRightIcon'
-import ArrowUpperIcon from '../../../../icons/ArrowUpperIcon'
 import Link from 'next/link'
-import HeaderLogo from '../../../../icons/HeaderLogo'
-
-const products = [
-    { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', },
-    { name: 'Engagement', description: 'Speak directly to your customers', href: '#', },
-    { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', },
-    { name: 'Integrations', description: 'Connect with third-party tools', href: '#', },
-    { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', },
-]
-const callsToAction = [
-    { name: 'Watch demo', href: '#' },
-    { name: 'Contact sales', href: '#' },
-]
-// const products = [
-//     { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-//     { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-//     { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-//     { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-//     { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-// ]
-// const callsToAction = [
-//     { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-//     { name: 'Contact sales', href: '#', icon: PhoneIcon },
-// ]
 
 
 
-function classNames(...classes: string[]) {
-    return classes.filter(Boolean).join(' ')
-}
+
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [megamenuTitles, setMegaMenuTitles] = useState([
-        { title: "UI/UX Designer" ,children: [
-            { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
-            { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
-            { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
-            { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
-            { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
-            { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
-        ], isActive: true},
+        {
+            title: "UI/UX Designer", children: [
+                { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
+                { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
+                { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
+                { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
+                { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
+                { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
+            ], isActive: false
+        },
         {
             title: "CMS & Ecommerce", children: [
                 { icon: '/images/WorkSection/Front-end-Developer.svg', subtitle: 'CMS & Ecommerce', desc: 'Lorem ipsum dolor sit' },
@@ -112,13 +77,13 @@ export default function Header() {
     }
 
     return (
-        <header className="bg-white border-b border-gray">
+        <header className="bg-white border-b border-gray ">
             <nav className="mx-auto flex max-w-[1320px] items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex ">
-                    <Link href="#" className="-m-1.5 p-1.5">
+                    <Link href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
-                        
-                         <Image
+
+                        <Image
                             src="/images/stroke-logo.svg"
                             alt="Logo"
                             className="h-8 2xl:h-10 w-auto"
@@ -129,18 +94,19 @@ export default function Header() {
                     </Link>
                 </div>
                 <div className="flex lg:hidden">
-                    <button
+                     <button
                         type="button"
                         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
-
                         <MenuIcon />
-
-                        {/* <Bars3Icon className="h-6 w-6" aria-hidden="true" /> */}
                     </button>
                 </div>
+
+
+
+
                 <Popover.Group className="hidden lg:flex lg:gap-x-9 2xl:gap-x-12 items-center">
                     <Link href="#" className="font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
                         Home
@@ -152,7 +118,6 @@ export default function Header() {
                     <Popover className="relative">
                         <Popover.Button className="font-primaryFont flex items-center gap-x-1 text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
                             Our Service
-                            {/* <ChevronDownIcon className="h-5 w-5 flex-none text-primary" aria-hidden="true" /> */}
                             <ChevronDownIcon className="text-primary h-4 w-4" />
                         </Popover.Button>
 
@@ -161,21 +126,20 @@ export default function Header() {
                             enter="transition ease-out duration-200"
                             enterFrom="opacity-0 translate-y-1"
                             enterTo="opacity-100 translate-y-0"
-                            leave="transition ease-in duration-150"
+                            leave="transition ease-out duration-200"
                             leaveFrom="opacity-100 translate-y-0"
                             leaveTo="opacity-0 translate-y-1"
                         >
-
-                            <Popover.Panel className="megamenu absolute top-11 z-10 mt-3 w-screen max-w-[996px] overflow-hidden rounded-[30px] bg-white shadow-lg"
+                           
+                            <Popover.Panel className={`megamenu before:content-[url('/images/arrow-upper.svg')] before:bg-no-repeat before:bg-contain before:fixed before:left-[45%] before:-top-[15px] before:overflow-visible before:z-20 before:text-base absolute top-12 mt-1 z-10 w-screen max-w-[996px] rounded-[30px] `}
                                 style={{ transform: 'scaleY(1) translate(-40%)' }}>
-                                {/* <div className='absolute -top-2 left-2/4 overflow-visiable'>
-                                    <ArrowUpperIcon />
-                                </div> */}
+                               
+                                <div className="overflow-hidden rounded-[30px] bg-white shadow-2xl">
                                 <div className="flex ">
                                     <div className="w-2/6 ">
                                         {megamenuTitles.map((item) =>
                                             <div className={`${item.isActive ? 'border-r-white bg-white text-primary cursor-pointer border-l-primary' : 'bg-lightRed text-secondary border-r-2 border-r-primary border-l-lightRed'} py-5 pl-6 border-l-4 flex justify-between hover:border-r-white hover:bg-white hover:text-primary hover:cursor-pointer hover:border-l-primary `} onClick={() => { handleActiveLink(item) }}>
-                                                <h4 className=' text-lg leading-[22px] font-medium'>{item.title}</h4>
+                                                <h4 className="text-lg leading-[22px] font-medium">{item.title}</h4>
                                                 {item.children && (
                                                     <ChevronRightIcon />
                                                 )}
@@ -183,40 +147,30 @@ export default function Header() {
                                         )}
 
                                     </div>
-                                    <div className="w-4/6 p-8 grow self-center ">
-                                        {megamenuTitles.map((item) =>
-                                            <div 
-                                            className={`grid grid-cols-2 gap-14 ${item.isActive ? 'opacity-100 max-h-[800px] lg:max-h-[500px] ' : 'opacity-0 max-h-0'} overflow-hidden transition-all duration-500 ease-in-out`}>
+                                    <div className="w-4/6 p-8 grow self-center overflow-hidden ">
+                                        <div>
+                                            {megamenuTitles.map((item) =>
+                                                <div
+                                                   className={`grid grid-cols-2 gap-14 ${item.isActive ? 'opacity-100 block' : 'opacity-0 hidden'} overflow-hidden slide-right`}> 
+                                                    {/* className={`grid grid-cols-2 gap-14 ${item.isActive ? 'opacity-100 max-h-[800px] lg:max-h-[500px] ' : 'opacity-0 max-h-0'} overflow-hidden transition-all duration-500 ease-in-out`}> */}
 
-                                                {item?.children?.map((list) =>
-                                                    <div className='flex gap-4 items-center' >
-                                                        <div className='w-[60px] h-[60px] border border-primary rounded-[10px] flex justify-center items-center'>
-                                                            <Image src={list.icon} height={30} width={30} alt={''} />
+                                                    {item?.children?.map((list) =>
+                                                        <div className="flex gap-4 items-center" >
+                                                            <div className="w-[60px] h-[60px] border border-primary rounded-[10px] flex justify-center items-center">
+                                                                <Image src={list.icon} height={30} width={30} alt={''} />
+                                                            </div>
+                                                            <div>
+                                                                <h4 className="text-sm text-secondary font-secondaryFont font-semibold">{list.subtitle}</h4>
+                                                                <p className="text-xs text-[#818F9E] font-secondaryFont font-medium leading-[1.125rem]">{list.desc}</p>
+                                                            </div>
                                                         </div>
-                                                        <div>
-                                                            <h4 className='text-sm text-secondary font-secondaryFont font-semibold'>{list.subtitle}</h4>
-                                                            <p className='text-xs text-[#818F9E] font-secondaryFont font-medium leading-[1.125rem]'>{list.desc}</p>
-                                                        </div>
-                                                    </div>
-                                                )}
-                                            </div>
-
-                                        )}
-                                        {/* </div> */}
-
+                                                    )}
+                                                </div>
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
-                                {/* <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                                    {callsToAction.map((item) => (
-                                        <a
-                                            key={item.name}
-                                            href={item.href}
-                                            className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-                                        >
-                                            {item.name}
-                                        </a>
-                                    ))}
-                                </div> */}
+                            </div>
                             </Popover.Panel>
                         </Transition>
                     </Popover>
@@ -227,47 +181,42 @@ export default function Header() {
                     <Link href="/about" className="font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
                         About
                     </Link>
-                    {/* <a href="/about" className="font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary">
-                        About
-                    </a> */}
 
                 </Popover.Group>
                 <div className="hidden lg:flex  lg:justify-end gap-4">
-                    {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-          Log in <span aria-hidden="true">&rarr;</span>
-        </a> */}
-                    <a
+                   
+                    <Link
                         href="mailto:info@strokeinfotech.com"
-                        className='w-[36px] h-[36px] border border-primary rounded-full flex justify-center items-center'
+                        className="w-[36px] h-[36px] border border-primary rounded-full flex justify-center items-center"
                     >
-                        <img className='h-4 w-auto' src="/images/E-mail.svg" />
-                    </a>
-                    <a
+                        <img className="h-4 w-auto" src="/images/E-mail.svg" />
+                    </Link>
+                    <Link
                         href="mailto:info@strokeinfotech.com"
-                        className='w-[36px] h-[36px] border border-primary rounded-full flex justify-center items-center'
+                        className="w-[36px] h-[36px] border border-primary rounded-full flex justify-center items-center"
                     >
-                        <img className='h-4 w-auto' src="/images/skype.svg" />
-                    </a>
-                    <a
+                        <img className="h-4 w-auto" src="/images/skype.svg" />
+                    </Link>
+                    <Link
                         href="mailto:info@strokeinfotech.com"
-                        className='w-[36px] h-[36px] border border-primary rounded-full flex justify-center items-center'
+                        className="w-[36px] h-[36px] border border-primary rounded-full flex justify-center items-center"
                     >
-                        <img className='h-4 w-auto' src="/images/Phone.svg" />
-                    </a>
-                    <button className='bg-primary font-primaryFont text-white px-4 rounded-full flex justify-center items-center'>
+                        <img src="/images/Phone.svg" className="h-4 w-auto" />
+                    </Link>
+                    <button className="bg-primary font-primaryFont text-white px-4 rounded-full flex justify-center items-center">
                         Contact Us
                     </button>
                 </div>
             </nav>
 
-            {/* Mobile Menu */}
-            <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                <div className=" fixed inset-0 z-10 backdrop-blur-sm" />
-                <Dialog.Panel className="megamenu fixed inset-y-0 right-0 z-10 w-[90%]  overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 ">
+
+
+            {/* New Mobile Menu */}
+            <div>
+                <div id="drawer" className={`drawer ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full '} transition-transform ease-in-out duration-500 bg-white shadow h-screen p-6 fixed top-0 right-0 w-[90%] z-10`}>
                     <div className="flex items-center justify-between">
-                        <Link href="#" className="-m-1.5 p-1.5">
+                        <Link href="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
-                           
                             <Image
                                 src="/images/stroke-logo.svg"
                                 alt="Logo"
@@ -284,7 +233,7 @@ export default function Header() {
                         >
                             <span className="sr-only">Close menu</span>
                             <XMarkIcon />
-                         
+
                         </button>
                     </div>
                     <div className="mt-6 flow-root">
@@ -292,14 +241,14 @@ export default function Header() {
                             <div className="space-y-2 py-6">
 
                                 <Link
-                                    href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:bg-gray-50"
+                                    href="/"
+                                    className="-mx-3 block rounded-lg px-3 py-2 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary"
                                 >
                                     Home
                                 </Link>
                                 <Link
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary"
                                 >
                                     Our Work
                                 </Link>
@@ -307,61 +256,66 @@ export default function Header() {
                                 <Disclosure as="div" className="-mx-3">
                                     {({ }) => (
                                         <>
-                                            <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-1.5 pl-3 pr-3.5 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:bg-gray-50">
+                                            <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-1.5 pl-3 pr-3.5 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary ">
                                                 Our Service
                                                 <ChevronDownIcon className="text-primary h-4 w-4" />
                                             </Disclosure.Button>
-                                            <div className='header transition-all'>
-                                            <Disclosure.Panel className="mt-2 space-y-4 ">
-
-                                                {megamenuTitles.map((item) =>
-                                                    <Disclosure.Button
-                                                        key={item.title}
-                                                        as="a"
-                                                        className="block rounded-lg py-2 pl-6 pr-3 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:text-primary"
-                                                    >
-                                                        {item.title}
-                                                    </Disclosure.Button>
-                                                )}
-                                            </Disclosure.Panel>
-                                            </div>
+                                            <Transition
+                                                as={Fragment}
+                                                enter="transition ease-in duration-500"
+                                                enterFrom="opacity-0 translate-y-1"
+                                                enterTo="opacity-100 translate-y-0"
+                                                leave="transition ease-out duration-500"
+                                                leaveFrom="opacity-100 translate-y-0"
+                                                leaveTo="opacity-0 translate-y-1"
+                                            >
+                                                <Disclosure.Panel className="mt-2 space-y-4 " >
+                                                    {megamenuTitles.map((item) =>
+                                                        <Disclosure.Button
+                                                            key={item.title}
+                                                            as="a"
+                                                            className="block rounded-lg py-2 pl-6 pr-3 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:text-primary"
+                                                        >
+                                                            {item.title}
+                                                        </Disclosure.Button>
+                                                    )}
+                                                </Disclosure.Panel>
+                                            </Transition>
                                         </>
                                     )}
                                 </Disclosure>
-                                <a
+
+                                <Link
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary  hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary "
                                 >
                                     Blog
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="/about"
-                                    className="-mx-3 block rounded-lg px-3 py-2 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary "
                                 >
                                     About
-                                </a>
-                                {/* <a
-                                    href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:bg-gray-50"
-                                >
-                                    Company
-                                </a> */}
+                                </Link>
+
                             </div>
                             <div className="py-6">
 
-                                <a
+                                <Link
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2.5 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary  hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2.5 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary "
                                 >
                                     Log in
-                                </a>
+                                </Link>
 
                             </div>
                         </div>
                     </div>
-                </Dialog.Panel>
-            </Dialog>
-        </header>
+                </div>
+                <div id="overlay" className={`overlay ${mobileMenuOpen ? 'opacity-40 visible' : 'opacity-0 invisible'} bg-black fixed bottom-0 top-0 right-0 left-0 h-screen w-dvw transition-opacity ease-in-out duration-200`} onClick={() => setMobileMenuOpen(false)}></div>
+            </div>
+
+        </header >
 
     )
 }

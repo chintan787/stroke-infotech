@@ -12,14 +12,7 @@ export default function Footer() {
         { icon: TwitterIcon, name: 'Twitter' },
         { icon: LinkedInIcon, name: 'LinkedIn' },
         { icon: SkypeIcon, name: 'Skype' },
-
-        // { icon: '/images/Footer/Facebook.svg', name: 'Facebook' },
-        // { icon: '/images/Footer/Twitter.svg', name: 'Twitter' },
-        // { icon: '/images/Footer/Linkedin.svg', name: 'LinkedIn' },
-        // { icon: '/images/Footer/Skype.svg', name: 'Skype' },
-
-
-    ]
+]
 
     const ourservice = [
         "CMS & Ecommerce",
@@ -78,7 +71,7 @@ export default function Footer() {
                                 // src="/images/Footer/footer-logo.png" 
                                 height={50} width={169} alt='logo' />
                         </Link>
-                        <div className="mt-3 ">
+                        <div className="mt-3 pt-1">
                             <div className='w-[80%] text-left'>
                                 <p className='font-secondaryFont font-medium text-[13px] leading-[29px]'>We help businesses improve their support by performance by providing managed services such as backup user management, security, networking, and support.</p>
                             </div>
@@ -93,7 +86,7 @@ export default function Footer() {
 
                         <div className="space-y-3">
                             <h3 className="text-primary font-bold text-[22px] leading-[25px]">Our Service Offer</h3>
-                            <ul className="space-y-0.5 mt-3">
+                            <ul className="space-y-0.5 pt-1">
                                 {ourservice.map((list) =>
                                     <li>
                                         <Link rel="noopener noreferrer" href="#" className="font-secondaryFont font-medium text-white text-[13px] leading-[29px]">{list}</Link>
@@ -104,7 +97,7 @@ export default function Footer() {
                         </div>
                         <div className="space-y-3">
                             <h3 className="text-primary font-bold text-[22px] leading-[25px]">Company</h3>
-                            <ul className="space-y-0.5 mt-3">
+                            <ul className="space-y-0.5 pt-1">
                                 {company.map((list) =>
                                     <li>
                                         <Link rel="noopener noreferrer" href="#" className="font-secondaryFont font-medium text-white text-[13px] leading-[29px]">{list}</Link>
@@ -115,16 +108,16 @@ export default function Footer() {
                         <div className="space-y-3">
                             <h3 className="text-primary font-bold text-[22px] leading-[25px]">Contact</h3>
 
-                            <ul className="space-y-0.5 mt-3">
+                            <ul className="space-y-0.5 pt-1">
 
                                 <li className='flex gap-2 pb-3'>
-                                    <Image src="/images/Footer/map.svg" height={20} width={20} alt='map' className='h-5 w-5' />
+                                    <Image src="/images/Footer/map.svg" height={20} width={20} alt='map' className='h-5 w-5 mt-0.5' />
                                     <Link rel="noopener noreferrer" href="#" className='font-secondaryFont font-medium text-white text-[13px] leading-[22px]'>
                                         407, Arth Business Center(ABC), Opp. Torrent Power Sub Station, Ring Road, Nikol, Ahmedabad, Gujarat - 382350
                                     </Link>
                                 </li>
                                 <li className='flex gap-2 pb-3'>
-                                    <Image src="/images/Footer/phone.svg" height={20} width={20} alt='map' className='h-5 w-5' />
+                                    <Image src="/images/Footer/phone.svg" height={20} width={20} alt='map' className='h-5 w-5 mt-0.5' />
                                     <div>
                                         <Link rel="noopener noreferrer" href="tel:+918460569854" className='font-secondaryFont font-medium text-white text-[13px] leading-[22px]'>
                                             (+91) 8460569854
@@ -134,7 +127,7 @@ export default function Footer() {
                                     </div>
                                 </li>
                                 <li className='flex gap-2 pb-3'>
-                                    <Image src="/images/Footer/mail.svg" height={20} width={20} alt='map' className='h-5 w-5' />
+                                    <Image src="/images/Footer/mail.svg" height={20} width={20} alt='map' className='h-5 w-5 mt-0.5' />
                                     <Link rel="noopener noreferrer" href="mailto:info@strokeinfotech.com" className='font-secondaryFont font-medium text-white text-[13px] leading-[22px]'>
                                         info@strokeinfotech.com
                                     </Link>

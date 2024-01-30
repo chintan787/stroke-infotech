@@ -25,7 +25,7 @@ export default function BoxContent() {
     return (
         <div className="my-16 px-6 sm:px-10">
             <div className="max-w-[1320px] mx-auto ">
-                <div className="bg-lightRed p-10 lg:p-14 rounded-[25px]">
+                <div className="bg-lightRed p-6 md:p-10 lg:p-14 rounded-[25px]">
                     {/* first section */}
                     <div className='flex flex-col md:flex-row justify-between gap-20 overflow-hidden pb-12'>
                         <div className='w-full md:w-3/5'>
@@ -35,7 +35,7 @@ export default function BoxContent() {
                                 Get a Quote
                             </button>
                         </div>
-                        <div className='w-full md:w-2/5 grid grid-cols-3 max-h-[350px] '>
+                        {/* <div className='w-full md:w-2/5 grid grid-cols-3 max-h-[350px] '>
                             {allimages.map((item, index) =>
                                 <div key={index} className={`${item.alignSelf} grid gap-4 justify-center `}>
                                     {item.frame.map((list) =>
@@ -44,15 +44,31 @@ export default function BoxContent() {
                                 </div>
 
                             )}
+                        </div> */}
+
+                        <div className='w-full md:w-2/5 flex flex-row gap-4 md:gap-6 justify-center max-h-[550px] md:max-h-[350px] '>
+                           
+                            {allimages.map((item, index) =>
+                                <div key={index} className={`${item.alignSelf} ${item.alignSelf === "self-start" ? "justify-start box-animation": "justify-end end-box-animation"} flex flex-col  items-center md:gap-4 h-72 lg:h-auto  `}>
+                                    {item.frame.map((list) =>
+                                        <Image src={list} height={50} width={50} alt='' className='h-[50px] w-auto my-2' />
+                                    )}
+                                </div>
+
+                            )}
                         </div>
+
+                        
                     </div>
+                    {/* <div className='a-three'></div> */}
+
 
                     {/*  */}
                     <div className='pt-12 pb-8 flex flex-wrap md:flex-nowrap gap-6 md:gap-4 lg:gap-12 xl:gap-20'>
                         {info.map((item, index) =>
                             <div key={index} className="w-full sm:w-5/12 md:w-4/12">
                                 <item.icon />
-                                <h4 className='text-xl lg:text-[1.625rem] leading-10 font-semibold' >{item.title}</h4>
+                                <h4 className='text-xl lg:text-[1.625rem] leading-10 font-semibold my-2' >{item.title}</h4>
                                 <p className='font-secondaryFont font-normal text-base lg:text-lg leading-[1.875rem]'>{item.paragraph}</p>
                             </div>
                         )}

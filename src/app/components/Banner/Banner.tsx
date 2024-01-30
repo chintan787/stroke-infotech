@@ -35,7 +35,7 @@ export default function Banner(
                        
                     </div>
                     <div className='w-[100%] lg:w-3/5 '>
-                        <Image src={imgPath} height={650} width={650} alt='banner_img' className='h-[650px] w-auto object-cover rounded-l-[50px] border-l-[16px] border-primary' />
+                        <Image src={imgPath} height={650} width={650} alt='banner_img' className='h-[650px] w-full object-cover rounded-l-[50px] border-l-[16px] border-primary' />
                     </div>
                 </div>
             </div>
