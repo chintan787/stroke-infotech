@@ -8,9 +8,9 @@ export default function BlogSection() {
             <div className='max-w-[1320px] mx-auto '>
                 <div className='flex flex-col lg:flex-row gap-6 xl:gap-12 flex-wrap lg:flex-nowrap '>
 
-                    <div className='w-full lg:w-[60%] flex gap-6 xl:gap-12 flex-col sm:flex-row justify-center items-center  lg:max-h-[450px]'>
-                    <div className='max-w-full h-full w-full bg-white rounded-[20px] shadow-md'>
-                        <Image src="/images/BlogSection/Blog-1.png" alt='' width={400} height={240}  className='rounded-t-[20px] h-60 w-full' />
+                    <div className='w-full lg:w-[60%] flex gap-6 xl:gap-12 flex-col sm:flex-row justify-center items-center lg:max-h-[450px]'>
+                    <div className='max-w-full h-auto w-full bg-white rounded-[20px] shadow-md'>
+                        <Image src="/images/BlogSection/Blog-1.png" alt='' width={400} height={240}  className='rounded-t-[20px] w-full object-contain' />
                         <div className='my-4'>
                             <div className='flex'>
                                 <div className='bg-primary w-[6px] h-9 rounded-r-[5px]'></div>
@@ -22,8 +22,8 @@ export default function BlogSection() {
                         </div>
                     </div>
 
-                    <div className='max-w-full h-full w-full bg-white rounded-[20px] shadow-md'>
-                    <Image src="/images/BlogSection/Blog-2.png" alt='' width={400} height={240}  className='rounded-t-[20px] h-60 w-full' />
+                    <div className='max-w-full h-auto w-full bg-white rounded-[20px] shadow-md'>
+                    <Image src="/images/BlogSection/Blog-2.png" alt='' width={400} height={240}  className='rounded-t-[20px] w-full object-contain' />
                         <div className='my-4'>
                             <div className='flex'>
                                 <div className='bg-primary w-[6px] h-9 rounded-r-[5px]'></div>
