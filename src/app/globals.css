@@ -141,7 +141,7 @@ right:28%;
 }
 
 
-
+/* our service slider */
 .slick-slider.slick-initialized{
   cursor: pointer;
 }
@@ -197,70 +197,15 @@ right:28%;
   }
 }
 
-
-
-.a-three {
-  width: 100px;
-	height: 100px;
-	/* position: absolute; */
-	top: 100px;
-	z-index: 100;
-	/* animation: drift 12s linear infinite; */
-	background-color: red;
+@media (max-width:640px) {
+  .slick-slider .slick-dots li button:before{
+    width:12px;
+    height: 12px;
+  }
+  .slick-slider .slick-dots{
+    bottom:-27px
+  }
 }
-.box-animation{
-  /* animation: drift 5s linear infinite; */
-  /* animation: translateinfinite 5s linear infinite; */
-  /* width: 420px; */
-  /* animation: marquee 5s linear infinite; */
-  /* animation: Scroll 10s linear infinite;
-  z-index: 100;
-  height: 200px; */
-}
-
-.end-box-animation{
-  /* animation: Scroll 10s linear infinite;
-  animation-direction: reverse;
-  z-index: 100;
-  height: 200px; */
-}
-
-/* @keyframes Scroll {
-  0% {transform: translateY(-10vw);
-      -webkit-transform: translateY(-10vw);}
-    100% {transform: translateY(10vw);
-        -webkit-transform: translateY(10vw);}
-    }
-
-
-@keyframes marquee {
-  0% { left: 0; }
-  100% { left: -100%; }
-}
-@keyframes drift {
-	from {
-		transform: translateY(0);
-	}
-	to {
-		transform: translateY(1000px);
-	}
-}
-
-@keyframes translatestf {
-	0% {
-		transform: translateY(100%);
-	}
-	100% {
-		transform: translateY(-10%);
-	}
-} */
-/* @keyframes translateinfinite {
-	100% {
-		transform: translateY(calc(-350px * 12));
-		transform: translateY(0);
-
-	}
-} */
 
 
 
@@ -327,12 +272,12 @@ animation: Scroll 10s linear infinite;}
 
 
       :root {
-        --color-text: navy;
+        /* --color-text: navy;
         --color-bg: papayawhip;
-        --color-bg-accent: #ecdcc0;
+        --color-bg-accent: #ecdcc0; */
         --size: clamp(10rem, 1rem + 40vmin, 30rem);
-        --gap: calc(var(--size) / 14);
-        /* --gap:10; */
+        /* --gap: calc(var(--size) / 6); */
+        --gap:40px;
 
         --duration: 10s;
         --scroll-start: 0;

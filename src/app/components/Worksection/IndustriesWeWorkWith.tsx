@@ -18,23 +18,18 @@ export default function IndustriesWeWorkWith() {
     ]
     return (
         <div className="bg-lightRed my-16 py-16 px-6 sm:px-10">
-            <div className='max-w-[1320px] mx-auto '>
-            {/* <div className='max-w-[1089px] mx-auto '> */}
-
-                <div className='text-center'>
+            <div className="max-w-[1320px] mx-auto">
+                <div className="text-center">
                 <SectionHeading title="Industries We Work With" color="text-secondary" />
                 </div>
-                {/* <h2 className="text-[48px] leading-[59px] text-secondary font-bold text-center">Industries We Work With </h2> */}
-                <div className='my-6 text-center'>
+                <div className="my-6 text-center">
                     <SectionParagraph text="Latest and Greatest Services" />
                 </div>
-                {/* <p className="font-montserrat font-regular text-black my-6 text-lg leading-[30px] text-center">Latest and Greatest Services</p> */}
-                
-                <div className='grid grid-rows-4 md:grid-rows-2 grid-flow-col gap-14 my-16 pt-16'>
+                <div className="grid grid-rows-4 sm:grid-rows-3 md:grid-rows-2 grid-flow-col gap-14 my-16 pt-16">
                     {work.map((i) =>
-                    <div className='flex flex-col justify-center items-center hover:bg-white py-4 '>
+                    <div className="flex flex-col justify-center items-center hover:bg-white py-4">
                         <img src={i.icon} />
-                        <p className='font-secondaryFont font-medium text-lg text-black mt-6'>{i.text}</p>
+                        <p className="font-secondaryFont font-medium text-lg text-black mt-6">{i.text}</p>
                         </div>
                     )}
                 </div>

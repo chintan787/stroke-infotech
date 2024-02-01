@@ -12,6 +12,7 @@ export default function OurWork() {
 
     const settings = {
         dots: true,
+        arrows:false,
         infinite: false,
         speed: 500,
         slidesToShow: 1,
@@ -42,7 +43,7 @@ export default function OurWork() {
 
                     <div className='my-10'>
 
-                        <div className='bg-lightRed max-h-auto lg:max-h-[600px] xl:max-h-[700px] w-full rounded-[50px] border-x-[10px] border-primary px-8 md:px-10 py-10 md:py-12'>
+                        <div className='bg-lightRed max-h-auto lg:max-h-[600px] xl:max-h-[700px] w-full rounded-[50px] border-x-[10px] border-primary px-6 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12'>
                             {/* h-auto lg:h-[600px] xl:h-[700px] */}
                             <Slider {...settings} draggable={true} >
                                 <div className='relative h-full'>
@@ -50,7 +51,7 @@ export default function OurWork() {
                                     <div className='h-auto lg:h-[500px] xl:h-[600px] rounded-[20px] px-4 md:px-10' style={{ background: "linear-gradient(256.4deg, rgba(158, 121, 228, 0.3) 0%, rgba(253, 112, 114, 0.3) 100%)" }} >
                                         <div className='flex flex-col lg:flex-row justify-between h-full gap-4'>
                                             <div className='w-full mx-auto lg:w-2/5 self-center lg:self-end pb-10 pt-10'>
-                                                <h3 className='font-bold text-[35px] leading-[22px]'>Green Scents</h3>
+                                                <h3 className='font-bold text-3xl md:text-[35px] leading-[22px]'>Green Scents</h3>
                                                 <div className='max-w-[362px] mt-10 p-5 rounded-[20px]' style={{ background: "radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.53) 0%, rgba(255, 255, 255, 0.13) 100%)" }}>
                                                     <div className='flex justify-between items-center flex-wrap lg:flex-nowrap'>
                                                         <Image src="/images/WorkSection/Logo.svg" height={50} width={100} alt='logo' className='h-[50px] w-auto object-contain' />
@@ -80,7 +81,7 @@ export default function OurWork() {
                                     <div className='h-auto lg:h-[500px] xl:h-[600px] rounded-[20px] px-4 md:px-10' style={{ background: "linear-gradient(256.4deg, rgba(158, 121, 228, 0.3) 0%, rgba(253, 112, 114, 0.3) 100%)" }} >
                                         <div className='flex flex-col lg:flex-row justify-between h-full gap-4'>
                                             <div className='w-full mx-auto lg:w-2/5 self-center lg:self-end pb-10 pt-10'>
-                                                <h3 className='font-bold text-[35px] leading-[22px]'>Green Scents</h3>
+                                                <h3 className='font-bold text-3xl md:text-[35px] leading-[22px]'>Green Scents</h3>
                                                 <div className='max-w-[362px] mt-10 p-5 rounded-[20px]' style={{ background: "radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.53) 0%, rgba(255, 255, 255, 0.13) 100%)" }}>
                                                     <div className='flex justify-between items-center flex-wrap lg:flex-nowrap'>
                                                         <Image src="/images/WorkSection/Logo.svg" height={50} width={100} alt='logo' className='h-[50px] w-auto object-contain' />
@@ -110,7 +111,7 @@ export default function OurWork() {
                                     <div className='h-auto lg:h-[500px] xl:h-[600px] rounded-[20px] px-4 md:px-10' style={{ background: "linear-gradient(256.4deg, rgba(158, 121, 228, 0.3) 0%, rgba(253, 112, 114, 0.3) 100%)" }} >
                                         <div className='flex flex-col lg:flex-row justify-between h-full gap-4'>
                                             <div className='w-full mx-auto lg:w-2/5 self-center lg:self-end pb-10 pt-10'>
-                                                <h3 className='font-bold text-[35px] leading-[22px]'>Green Scents</h3>
+                                                <h3 className='font-bold text-3xl md:text-[35px] leading-[22px]'>Green Scents</h3>
                                                 <div className='max-w-[362px] mt-10 p-5 rounded-[20px]' style={{ background: "radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.53) 0%, rgba(255, 255, 255, 0.13) 100%)" }}>
                                                     <div className='flex justify-between items-center flex-wrap lg:flex-nowrap'>
                                                         <Image src="/images/WorkSection/Logo.svg" height={50} width={100} alt='logo' className='h-[50px] w-auto object-contain' />
@@ -140,7 +141,7 @@ export default function OurWork() {
                                     <div className='h-auto lg:h-[500px] xl:h-[600px] rounded-[20px] px-4 md:px-10' style={{ background: "linear-gradient(256.4deg, rgba(158, 121, 228, 0.3) 0%, rgba(253, 112, 114, 0.3) 100%)" }} >
                                         <div className='flex flex-col lg:flex-row justify-between h-full gap-4'>
                                             <div className='w-full mx-auto lg:w-2/5 self-center lg:self-end pb-10 pt-10'>
-                                                <h3 className='font-bold text-[35px] leading-[22px]'>Green Scents</h3>
+                                                <h3 className='font-bold text-3xl md:text-[35px] leading-[22px]'>Green Scents</h3>
                                                 <div className='max-w-[362px] mt-10 p-5 rounded-[20px]' style={{ background: "radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.53) 0%, rgba(255, 255, 255, 0.13) 100%)" }}>
                                                     <div className='flex justify-between items-center flex-wrap lg:flex-nowrap'>
                                                         <Image src="/images/WorkSection/Logo.svg" height={50} width={100} alt='logo' className='h-[50px] w-auto object-contain' />

@@ -15,7 +15,7 @@ export default function AboutPage() {
     const imageWidthTextLeft = ["We’re a small team with talented and committed experts that help global brands and enterprises with innovative solutions. We’re not just a company but we’re one family that work together to achive a goals.",
         "We’re a small team with talented and committed experts that help global brands and enterprises with innovative solutions. We’re not just a company but we’re one family that work together to achive a goals."
     ]
-    const imageWidthTextRight = ["We’re a small team with talented and committed experts that help global brands and enterprises with innovative solutions. For us, the definition of success is providing creative ideas, transparancy and in timely manners.","We’re a small team with talented and committed experts that help global brands and enterprises with innovative solutions. We’re not just a company .","We’re a small team with talented and committed experts that help global brands and enterprises with innovative solutions. We’re not just a company ."]
+    const imageWidthTextRight = ["We’re a small team with talented and committed experts that help global brands and enterprises with innovative solutions. For us, the definition of success is providing creative ideas, transparancy and in timely manners.","We’re a small team with talented and committed experts that help global brands and enterprises with innovative solutions. We’re not just a company.","We’re a small team with talented and committed experts that help global brands and enterprises with innovative solutions. We’re not just a company."]
     return (
         <>
             <Banner aboutTitle="About Us" 

@@ -43,7 +43,7 @@ export default function FAQ() {
                                 {item.isActive ? <MinusIcon /> :<PlusIcon /> }
                                 
                             </div>
-                            <div className="ml-6 ">
+                            <div className="ml-6">
                                 <h4 className="font-secondaryFont text-sm md:text-base leading-6 md:leading-[1.875rem] font-medium relative block cursor-pointer">{item.que}</h4>
                                 <p className={`panel-content ${item.isActive ? 'h-auto opacity-100 py-4' : 'h-0 opacity-0'} overflow-hidden relative transition-all ease-in duration-300 font-secondaryFont text-sm md:text-base font-light`}>{item.ans}</p>
                             </div>

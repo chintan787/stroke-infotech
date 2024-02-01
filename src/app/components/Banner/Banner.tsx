@@ -10,7 +10,7 @@ export default function Banner(
 
 ) {
     return (
-        <div className="flex flex-col items-center justify-between bg-lightRed overflow-hidden">
+        <div className="flex flex-col items-center justify-between bg-lightRed overflow-hidden mb-20">
             <div className="lg:max-w-7xl 2xl:max-w-[1620px] ml-auto pl-6 lg:pl-10 ">
                 <div className="flex justify-end items-center flex-col md:flex-row gap-6 ">
                     <div className="w-full lg:w-2/5 py-8 md:py-0">
@@ -22,8 +22,8 @@ export default function Banner(
                         )}
                         <div className="w-4/5 my-6">
                             {data?.map((item:any,index: any) =>
-                                <div key={index} className='my-3'>
-                                    <h4 className='font-secondaryFont font-semibold text-[1.375rem] leading-[1.875rem] mb-3'>{item?.subHeading}</h4>
+                                <div key={index} className="my-3">
+                                    <h4 className="font-secondaryFont font-semibold text-[1.375rem] leading-[1.875rem] mb-3">{item?.subHeading}</h4>
                                     <SectionParagraph text={item?.para} />
                                 </div>
                             )}
@@ -34,8 +34,8 @@ export default function Banner(
                         )}
                        
                     </div>
-                    <div className='w-[100%] lg:w-3/5 '>
-                        <Image src={imgPath} height={650} width={650} alt='banner_img' className='h-[650px] w-full object-cover rounded-l-[50px] border-l-[16px] border-primary' />
+                    <div className="w-[100%] lg:w-3/5">
+                        <Image src={imgPath} height={650} width={650} alt='banner_img' className="h-[650px] w-full object-cover rounded-l-[50px] border-l-[16px] border-primary" />
                     </div>
                 </div>
             </div>

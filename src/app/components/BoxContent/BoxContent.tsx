@@ -46,89 +46,93 @@ export default function BoxContent() {
 
                             )}
                         </div> */}
+                        
+                            {/* <div className="w-full md:w-2/5 flex flex-col gap-4 md:gap-6 justify-center max-h-[550px] md:max-h-[350px]">
+                                <article className="flex flex-row gap-10 m-auto max-w-[400px] h-[350px]">
+                                    <div className="flex overflow-hidden gap-10" style={{ maskImage: 'linear-gradient( to bottom, to right),hsl(0 0% 0% / 0),hsl(0 0% 0% / 1) 20%,hsl(0 0% 0% / 1) 80%,hsl(0 0% 0% / 0))' }}>
+                                        <div className="shrink-0 flex items-center justify-around gap-10 min-w-full animation-scroll-Y animation-scrolling-logos" >
+
+                                            {allimages.map((item, index) =>
+                                                item.frame.map((list) =>
+                                                    <Image src={list} height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                                )
+                                            )}
+                                        </div>
+
+                                    </div>
+                                </article>
+                            </div> */}
 
                             <div className='w-full md:w-2/5 flex flex-row gap-4 md:gap-6 justify-center max-h-[550px] md:max-h-[350px] '>
 
                                 <article className="wrapper wrapper--vertical">
                                     <div className="marquee marquee--vertical">
                                         <div className="marquee__group">
-                                            <Image src="/images/Boxcontent/nodejs.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/tensorflow.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/angular.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/django.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
+                                            <Image src="/images/Boxcontent/nodejs.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                            <Image src="/images/Boxcontent/tensorflow.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                            <Image src="/images/Boxcontent/angular.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                            <Image src="/images/Boxcontent/django.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
 
                                         </div>
 
                                         <div aria-hidden="true" className="marquee__group">
-                                        <Image src="/images/Boxcontent/nodejs.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/tensorflow.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/angular.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/django.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
+                                            <Image src="/images/Boxcontent/nodejs.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                            <Image src="/images/Boxcontent/tensorflow.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                            <Image src="/images/Boxcontent/angular.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                            <Image src="/images/Boxcontent/django.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
 
                                         </div>
                                     </div>
 
                                     <div className="marquee marquee--vertical marquee--reverse">
                                         <div className="marquee__group">
-                                        <Image src="/images/Boxcontent/python.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/aws.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/react.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/swift.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
+                                            <Image src="/images/Boxcontent/python.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                            <Image src="/images/Boxcontent/aws.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                            <Image src="/images/Boxcontent/react.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                            <Image src="/images/Boxcontent/swift.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
 
 
                                         </div>
 
                                         <div aria-hidden="true" className="marquee__group">
-                                        <Image src="/images/Boxcontent/python.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/aws.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/react.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/swift.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
+                                            <Image src="/images/Boxcontent/python.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                            <Image src="/images/Boxcontent/aws.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                            <Image src="/images/Boxcontent/react.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                            <Image src="/images/Boxcontent/swift.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
 
 
                                         </div>
                                     </div>
 
                                     <div className="marquee marquee--vertical">
-                                    <div className="marquee marquee--vertical">
-                                        <div className="marquee__group">
-                                            <Image src="/images/Boxcontent/nodejs.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/tensorflow.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/angular.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/django.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
+                                        <div className="marquee marquee--vertical">
+                                            <div className="marquee__group">
+                                                <Image src="/images/Boxcontent/nodejs.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                                <Image src="/images/Boxcontent/tensorflow.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                                <Image src="/images/Boxcontent/angular.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                                <Image src="/images/Boxcontent/django.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
 
+                                            </div>
+
+                                            <div aria-hidden="true" className="marquee__group">
+                                                <Image src="/images/Boxcontent/nodejs.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                                <Image src="/images/Boxcontent/tensorflow.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                                <Image src="/images/Boxcontent/angular.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+                                                <Image src="/images/Boxcontent/django.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
+
+                                            </div>
                                         </div>
-
-                                        <div aria-hidden="true" className="marquee__group">
-                                        <Image src="/images/Boxcontent/nodejs.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/tensorflow.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/angular.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-                                            <Image src="/images/Boxcontent/django.png" height={50} width={50} alt='' className='h-[50px] w-auto '  />
-
-                                        </div>
-                                    </div>
                                     </div>
                                 </article>
-
-                                {/* {allimages.map((item, index) =>
-                                    <div key={index} className={`${item.alignSelf} ${item.alignSelf === "self-start" ? "justify-start box-animation" : "justify-end end-box-animation"} flex flex-col  items-center md:gap-4 h-72 lg:h-auto  `}>
-                                        {item.frame.map((list) =>
-                                            <Image src={list} height={50} width={50} alt='' className='h-[50px] w-auto my-2' />
-                                        )}
-                                    </div>
-
-                                )} */}
-
                             </div>
-
-
                         </div>
-                        
-                        <div className='pt-12 pb-8 flex flex-wrap md:flex-nowrap gap-6 md:gap-4 lg:gap-12 xl:gap-20'>
+
+                        <div className="pt-12 pb-8 flex flex-wrap md:flex-nowrap gap-6 md:gap-4 lg:gap-12 xl:gap-20">
                             {info.map((item, index) =>
                                 <div key={index} className="w-full sm:w-5/12 md:w-4/12">
                                     <item.icon />
-                                    <h4 className='text-xl lg:text-[1.625rem] leading-10 font-semibold my-2' >{item.title}</h4>
-                                    <p className='font-secondaryFont font-normal text-base lg:text-lg leading-[1.875rem]'>{item.paragraph}</p>
+                                    <h4 className="text-xl lg:text-[1.625rem] leading-10 font-semibold my-2">{item.title}</h4>
+                                    <p className="font-secondaryFont font-normal text-base lg:text-lg leading-[1.875rem]">{item.paragraph}</p>
                                 </div>
                             )}
                         </div>

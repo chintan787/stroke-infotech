@@ -61,13 +61,13 @@ export default function Technologystack() {
     }
 
     return (
-        <div className=" bg-white my-16 px-6 sm:px-10">
-            <div className='max-w-[1320px] mx-auto '>
+        <div className="bg-white my-16 px-6 sm:px-10">
+            <div className="max-w-[1320px] mx-auto">
                 <SectionHeading title="Technology Stack" color="text-black" />
                 <div >
-                    <ul className='flex flex-row flex-wrap gap-4 my-10'>
+                    <ul className="flex flex-row flex-wrap gap-4 my-10">
                         {tabsContent.map((i) =>
-                            <li className={` px-6 py-4 font-medium text-base sm:text-lg leading-[21.83px] rounded-full cursor-pointer ${i.isActive ? 'bg-primary text-white' : 'bg-lightRed text-black'} `}
+                            <li className={`px-4 w-auto h-[50px] flex items-center font-medium text-base sm:text-lg leading-[21.83px] rounded-full cursor-pointer ${i.isActive ? "bg-primary text-white" : "bg-lightRed text-black"} `}
                                 onClick={() => { handleActiveLink(i.tabName) }}
                             >
                                 {i.tabName}
@@ -76,12 +76,11 @@ export default function Technologystack() {
                     </ul>
                 <div className='py-6 '>
                     {tabsContent.map((tech) =>
-                          <div className={`flex flex-row flex-wrap gap-4 md:gap-6 ${tech.isActive ? 'opacity-100 max-h-[800px] lg:max-h-[500px] ':'opacity-0 max-h-0'} overflow-hidden transition-all duration-500 ease-in-out`}>
+                          <div className={`flex flex-row flex-wrap gap-4 md:gap-6 ${tech.isActive ? "opacity-100 max-h-[800px] lg:max-h-[500px]" : "opacity-0 max-h-0"} overflow-hidden transition-all duration-500 ease-in-out`}>
                         {tech.childern.map((item) =>
                             <div className={`bg-lightRed max-w-[120px] sm:max-w-[166px] w-full h-auto flex flex-col justify-center items-center py-4 sm:py-8 rounded-[24px] sm:rounded-[40px] `}>
                                 <Image src={item.icon} height={70} width={70} alt={item.techName} className='h-20 w-auto pt-2' />
-                                {/* <img src={item.icon} className='w-auto pt-2' /> */}
-                                <p className='font-normal text-base leading-[18px] pt-2 sm:pt-6 text-black'>{item.techName}</p>
+                                <p className="font-normal text-base leading-[18px] pt-2 sm:pt-6 text-black">{item.techName}</p>
                             </div>
                         )}
                             </div>

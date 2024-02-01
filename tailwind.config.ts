@@ -39,6 +39,15 @@ const config: Config = {
         outfitFont:["var(--font-ptSans)","system-ui", "sans-serif"],
         nunitoFont:["var(--font-nunito)","system-ui", "sans-serif"]
        
+      },
+      keyframes:{
+        scrollY:{
+          '100%': { transform: 'translateY(var(--scroll-start))' },
+          '0%': { transform: 'translateY(var(--scroll-end))' },
+        }
+      },
+      animation:{
+        'scrolling-logos' :'scrollY 10s linear infinite'
       }
       
     },
