@@ -28,7 +28,7 @@ export default function Testimonials() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="my-10 flex flex-col lg:flex-row gap-10 lg:gap-12 justify-between items-start">
+            <div className="my-10 flex flex-col lg:flex-row gap-10 lg:gap-12 justify-between items-start mr-4 md:mr-10">
 
               <div className="w-full lg:w-2/5">
                 <h3 className="font-secondaryFont text-xl md:text-2xl text-black font-bold">Dev Staff Augmentation for Flight & Hotels Management System</h3>
@@ -79,7 +79,7 @@ export default function Testimonials() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="my-10 flex flex-col lg:flex-row gap-10 lg:gap-12 justify-between items-start">
+            <div className="my-10 flex flex-col lg:flex-row gap-10 lg:gap-12 justify-between items-start mr-4 md:mr-10">
 
               <div className="w-full lg:w-2/5">
                 <h3 className="font-secondaryFont text-xl md:text-2xl text-black font-bold">Dev Staff Augmentation for Flight & Hotels Management System</h3>
@@ -131,7 +131,7 @@ export default function Testimonials() {
 
 
           <SwiperSlide>
-            <div className="my-10 flex flex-col lg:flex-row gap-10 lg:gap-12 justify-between items-start">
+            <div className="my-10 flex flex-col lg:flex-row gap-10 lg:gap-12 justify-between items-start mr-4 md:mr-10">
 
               <div className="w-full lg:w-2/5">
                 <h3 className="font-secondaryFont text-xl md:text-2xl text-black font-bold">Dev Staff Augmentation for Flight & Hotels Management System</h3>

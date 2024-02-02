@@ -28,101 +28,33 @@ export default function BoxContent() {
                 <div className="max-w-[1320px] mx-auto ">
                     <div className="bg-lightRed p-6 md:p-10 lg:p-14 rounded-[25px]">
                         {/* first section */}
-                        <div className='flex flex-col md:flex-row justify-between gap-12 overflow-hidden pb-12'>
-                            <div className='w-full md:w-3/5'>
+                        <div className="flex flex-col md:flex-row justify-between gap-12 overflow-hidden pb-12">
+                            <div className="w-full md:w-3/5">
                                 <SectionHeading title="Why Choose Stroke Infotech For Your Innovative Service" color="text-secondary" />
                                 <SectionParagraph text="Founded by a team of specialists in cyber security, consultancy and information security, we are a trusted cyber security company with a passion for quality service. Our mission is to provide cyber security services and training that extends beyond technology to encompass people, culture." />
-                                <button className='bg-primary text-white font-medium px-4 md:px-7 py-2 md:py-3 text-base md:text-lg leading-7 md:leading-[1.875rem] rounded-[50px] flex justify-center items-center'>
+                                <button className="bg-primary text-white font-medium px-4 md:px-7 py-2 md:py-3 text-base md:text-lg leading-7 md:leading-[1.875rem] rounded-[50px] flex justify-center items-center">
                                     Get a Quote
                                 </button>
                             </div>
-                            {/* <div className='w-full md:w-2/5 grid grid-cols-3 max-h-[350px] '>
-                            {allimages.map((item, index) =>
-                                <div key={index} className={`${item.alignSelf} grid gap-4 justify-center `}>
-                                    {item.frame.map((list) =>
-                                        <Image src={list} height={50} width={50} alt='' className='h-[50px] w-auto my-2' />
-                                    )}
-                                </div>
 
-                            )}
-                        </div> */}
-                        
-                            {/* <div className="w-full md:w-2/5 flex flex-col gap-4 md:gap-6 justify-center max-h-[550px] md:max-h-[350px]">
+                            <div className="w-full md:w-2/5 flex flex-row gap-4 md:gap-6 justify-center max-h-[550px] md:max-h-[350px]">
                                 <article className="flex flex-row gap-10 m-auto max-w-[400px] h-[350px]">
-                                    <div className="flex overflow-hidden gap-10" style={{ maskImage: 'linear-gradient( to bottom, to right),hsl(0 0% 0% / 0),hsl(0 0% 0% / 1) 20%,hsl(0 0% 0% / 1) 80%,hsl(0 0% 0% / 0))' }}>
-                                        <div className="shrink-0 flex items-center justify-around gap-10 min-w-full animation-scroll-Y animation-scrolling-logos" >
-
-                                            {allimages.map((item, index) =>
-                                                item.frame.map((list) =>
-                                                    <Image src={list} height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                                )
-                                            )}
-                                        </div>
-
-                                    </div>
-                                </article>
-                            </div> */}
-
-                            <div className='w-full md:w-2/5 flex flex-row gap-4 md:gap-6 justify-center max-h-[550px] md:max-h-[350px] '>
-
-                                <article className="wrapper wrapper--vertical">
-                                    <div className="marquee marquee--vertical">
-                                        <div className="marquee__group">
-                                            <Image src="/images/Boxcontent/nodejs.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                            <Image src="/images/Boxcontent/tensorflow.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                            <Image src="/images/Boxcontent/angular.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                            <Image src="/images/Boxcontent/django.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-
-                                        </div>
-
-                                        <div aria-hidden="true" className="marquee__group">
-                                            <Image src="/images/Boxcontent/nodejs.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                            <Image src="/images/Boxcontent/tensorflow.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                            <Image src="/images/Boxcontent/angular.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                            <Image src="/images/Boxcontent/django.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-
-                                        </div>
-                                    </div>
-
-                                    <div className="marquee marquee--vertical marquee--reverse">
-                                        <div className="marquee__group">
-                                            <Image src="/images/Boxcontent/python.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                            <Image src="/images/Boxcontent/aws.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                            <Image src="/images/Boxcontent/react.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                            <Image src="/images/Boxcontent/swift.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-
-
-                                        </div>
-
-                                        <div aria-hidden="true" className="marquee__group">
-                                            <Image src="/images/Boxcontent/python.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                            <Image src="/images/Boxcontent/aws.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                            <Image src="/images/Boxcontent/react.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                            <Image src="/images/Boxcontent/swift.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-
-
-                                        </div>
-                                    </div>
-
-                                    <div className="marquee marquee--vertical">
-                                        <div className="marquee marquee--vertical">
-                                            <div className="marquee__group">
-                                                <Image src="/images/Boxcontent/nodejs.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                                <Image src="/images/Boxcontent/tensorflow.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                                <Image src="/images/Boxcontent/angular.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                                <Image src="/images/Boxcontent/django.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-
+                                    {allimages.map((item, index) =>
+                                       <div className="flex overflow-hidden gap-10 select-none marquee--vertical" 
+                                        style={{ maskImage:"linear-gradient(( to bottom,to right),hsl(0 0% 0% / 0), hsl(0 0% 0% / 1) 20%, hsl(0 0% 0% / 1) 80%,hsl(0 0% 0% / 0))"}}
+                                        > 
+                                            <div className="shrink-0 flex flex-col items-center justify-around gap-10 min-w-full animate-scrolling-logos" style={{animationDirection:item.alignSelf === "self-end" ? 'reverse' : '',animationDelay:item.alignSelf === "self-end" ? '-3s' : ''}}>
+                                                {item.frame.map((list) =>
+                                                    <Image src={list} height={50} width={50} alt='' className="h-[50px] w-auto" />
+                                                )}
                                             </div>
-
-                                            <div aria-hidden="true" className="marquee__group">
-                                                <Image src="/images/Boxcontent/nodejs.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                                <Image src="/images/Boxcontent/tensorflow.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                                <Image src="/images/Boxcontent/angular.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-                                                <Image src="/images/Boxcontent/django.png" height={50} width={50} alt='' className='h-[50px] w-auto ' />
-
+                                            <div aria-hidden="true" className="shrink-0 flex flex-col items-center justify-around gap-10 min-w-full animate-scrolling-logos " style={{animationDirection:item.alignSelf === "self-end" ? 'reverse' : '' ,animationDelay:item.alignSelf === "self-end" ? '-3s' : ''}}>
+                                                {item.frame.map((list) =>
+                                                    <Image src={list} height={50} width={50} alt='' className="h-[50px] w-auto " />
+                                                )}
                                             </div>
                                         </div>
-                                    </div>
+                                    )}
                                 </article>
                             </div>
                         </div>
@@ -137,17 +69,8 @@ export default function BoxContent() {
                             )}
                         </div>
                     </div>
-
-
-
-
-
-
-
-                </div>
-            </div>
-
-
+                </div >
+            </div >
         </>
     )
 }

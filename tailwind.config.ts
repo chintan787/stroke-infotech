@@ -44,11 +44,20 @@ const config: Config = {
         scrollY:{
           '100%': { transform: 'translateY(var(--scroll-start))' },
           '0%': { transform: 'translateY(var(--scroll-end))' },
-        }
+        },
+        // revreseY:{
+        //   '0%': { transform: 'translateY(var(--scroll-end))' },
+        //   '100%': { transform: 'translateY(var(--scroll-start))' },
+          
+        // },
+        
       },
       animation:{
-        'scrolling-logos' :'scrollY 10s linear infinite'
-      }
+        'scrolling-logos' :'scrollY 10s linear infinite',
+        // 'scrolling-logosreverse' : 'revreseY 10s linear infinite',
+        
+      },
+      
       
     },
   },
