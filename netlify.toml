@@ -1,15 +1,11 @@
-[build]
-  command = "npm run build"  # Adjust the build command based on your project setup
-  functions = "/src/app"  # If you use serverless functions
-  publish = ".next"  # Set the correct publish directory
-
+# Redirect with a 301
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+from = "/home"
+to = "/"
+status = 301
 
-[headers]
-  "/*"
-  X-Frame-Options = "DENY"
-  X-XSS-Protection = "1; mode=block"
-  Referrer-Policy = "same-origin"
+# Redirect with a 302
+[[redirects]]
+from = "/about"
+to = "/"
+status = 302
