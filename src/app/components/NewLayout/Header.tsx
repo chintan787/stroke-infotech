@@ -268,7 +268,6 @@ export default function Header() {
                                                         <Disclosure.Button
                                                             key={item.title}
                                                             as="a"
-                                                            key={item.title}
                                                             className="block rounded-lg py-2 pl-6 pr-3 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary hover:text-primary"
                                                         >
                                                             {item.title}
