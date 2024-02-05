@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  /* --color-primary:#FF455C; */
+  --color-primary: #FF2449;
+  --color-secondary: #14133B;
+  /* --font:'goliry' ,sans-serif; */
+
+
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  /* --gap: calc(var(--size) / 6); */
+  --gap: 40px;
+
+  --duration: 10s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+body {
+  /* color: rgb(var(--foreground-rgb)); */
+  font-family: var(--font-poppins);
+  color: var(--color-secondary);
+
+}
+
+
+/* rating */
+.dv-star-rating-star {
+  padding-right: 5px;
+}
+
+.dv-star-rating-star i {
+  font-size: 2.4rem;
+}
+
+
+/* slider pagination */
+
+.swiper {
+  display: flex;
+  flex-direction: column;
+}
+
+.mySwiper {
+  height: 100%;
+  max-width: 1320px;
+  padding-bottom: 10px;
+}
+
+.mySwiper [class^="swiper-button-"] {
+  top: initial;
+  bottom: 0;
+}
+
+
+.swiper .swiper-button-prev {
+  background-color: #fff9fa;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  left: initial;
+  right: 150px;
+}
+
+
+
+.swiper .swiper-button-next {
+  background-color: #fff9fa;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  right: 0;
+}
+
+.swiper .swiper-button-prev::after {
+  content: url('/images/Previous-arrow.svg');
+  background-repeat: no-repeat;
+  font-size: 14px;
+}
+
+.swiper .swiper-button-next::after {
+  content: url('/images/Next-arrow.svg');
+  background-repeat: no-repeat;
+  font-size: 14px;
+}
+
+.swiper .swiper-pagination {
+  position: absolute;
+  top: initial;
+  bottom: 14px;
+  right: 80px;
+  left: initial;
+  width: auto;
+  color: var(--color-primary);
+
+}
+
+.swiper .swiper-pagination span {
+  color: var(--color-primary);
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+@media (min-width:700px) and (max-width:920px) {
+  .swiper .swiper-button-prev {
+    right: 35%;
+  }
+
+  .swiper .swiper-button-next {
+    right: 13%;
+  }
+
+  .swiper .swiper-pagination {
+    right: 25%;
+  }
+}
+
+@media (min-width:921px) and (max-width:1023px) {
+  .swiper .swiper-button-prev {
+    right: 38%;
+  }
+
+  .swiper .swiper-button-next {
+    right: 18%;
+  }
+
+  .swiper .swiper-pagination {
+    right: 28%;
+  }
+}
+
+
+/* our service slider */
+.slick-slider.slick-initialized {
+  cursor: pointer;
+}
+
+.slick-list {
+  border-radius: 20px;
+}
+
+.slick-slider .slick-dots {
+  bottom: -33px;
+}
+
+.slick-slider .slick-slide {
+  transition: all 0.3s;
+}
+
+.slick-slider .slick-dots li,
+.slick-slider.slick-dots li button {
+  width: 15px;
+  height: 15px;
+}
+
+.slick-slider .slick-dots li button:before {
+  height: 15px;
+  width: 15px;
+}
+
+.slick-slider .slick-dots li.slick-active,
+.slick-slider.slick-dots li.slick-active button {
+  width: 60px;
+}
+
+.slick-slider .slick-dots li button:before {
+  font-size: 0px;
+  border: 1px solid #FF2449;
+  border-radius: 12px;
+  background-color: #fff;
+  opacity: 1;
+  transition: opacity 0.5s, background-color 0.5s, width 0.5s;
+  transition-delay: 0.5s, 0.5s, 0s;
+}
+
+.slick-slider .slick-dots li.slick-active button:before {
+  background-color: #FF2449;
+  opacity: 1;
+  width: 60px;
+  transition-delay: 0s;
+  border-radius: 12px;
+}
+
+.slide-right {
+  animation: 1s slide-top;
+}
+
+@keyframes slide-top {
+  from {
+    margin-top: -100%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+@media (max-width:640px) {
+  .slick-slider .slick-dots li button:before {
+    width: 12px;
+    height: 12px;
+  }
+
+  .slick-slider .slick-dots {
+    bottom: -27px
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.marquee--vertical,
+.marquee--vertical .marquee__group {
+  flex-direction: column;
+}
