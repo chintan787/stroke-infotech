@@ -81,7 +81,7 @@ export default function Header() {
         <header className="bg-white border-b border-gray">
             <nav className="mx-auto flex max-w-[1320px] items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex">
-                    <Link href="/" shallow={true} className="-m-1.5 p-1.5">
+                    <Link href="/"  className="-m-1.5 p-1.5">
                         <Image
                             src="/images/stroke-logo.svg"
                             alt="Logo"
@@ -105,10 +105,10 @@ export default function Header() {
 
 
                 <Popover.Group className="hidden lg:flex lg:gap-x-9 2xl:gap-x-12 items-center">
-                    <Link href="/" shallow={true} className="font-primaryFont text-[0.938rem] font-medium leading-[1.138rem] text-secondary hover:text-primary inline-block after:content-[''] after:block after:w-0 hover:after:w-full after:h-[1px] after:bg-primary transition-all after:transition-all ease-in after:duration-500 ">
+                    <Link href="/"  className="font-primaryFont text-[0.938rem] font-medium leading-[1.138rem] text-secondary hover:text-primary inline-block after:content-[''] after:block after:w-0 hover:after:w-full after:h-[1px] after:bg-primary transition-all after:transition-all ease-in after:duration-500 ">
                         Home
                     </Link>
-                    <Link href="#" shallow={true} className="font-primaryFont text-[0.938rem] font-medium leading-[1.138rem]  text-secondary hover:text-primary inline-block after:content-[''] after:block after:w-0 hover:after:w-full after:h-[1px] after:bg-primary transition-all after:transition-all ease-in after:duration-500">
+                    <Link href="#"  className="font-primaryFont text-[0.938rem] font-medium leading-[1.138rem]  text-secondary hover:text-primary inline-block after:content-[''] after:block after:w-0 hover:after:w-full after:h-[1px] after:bg-primary transition-all after:transition-all ease-in after:duration-500">
                         Our Work
                     </Link>
 
@@ -169,10 +169,10 @@ export default function Header() {
                             </Popover.Panel>
                         </Transition>
                     </Popover>
-                    <Link href="#" shallow={true} className="font-primaryFont text-[0.938rem] font-medium leading-[1.138rem] text-secondary hover:text-primary inline-block after:content-[''] after:block after:w-0 hover:after:w-full after:h-[1px] after:bg-primary transition-all after:transition-all ease-in after:duration-500">
+                    <Link href="#"  className="font-primaryFont text-[0.938rem] font-medium leading-[1.138rem] text-secondary hover:text-primary inline-block after:content-[''] after:block after:w-0 hover:after:w-full after:h-[1px] after:bg-primary transition-all after:transition-all ease-in after:duration-500">
                         Blog
                     </Link>
-                    <Link href="/about" shallow={true} className="font-primaryFont text-[0.938rem] font-medium leading-[1.138rem] text-secondary hover:text-primary inline-block after:content-[''] after:block after:w-0 hover:after:w-full after:h-[1px] after:bg-primary transition-all after:transition-all ease-in after:duration-500">
+                    <Link href="/about"  className="font-primaryFont text-[0.938rem] font-medium leading-[1.138rem] text-secondary hover:text-primary inline-block after:content-[''] after:block after:w-0 hover:after:w-full after:h-[1px] after:bg-primary transition-all after:transition-all ease-in after:duration-500">
                         About
                     </Link>
                 </Popover.Group>
@@ -180,19 +180,19 @@ export default function Header() {
 
                 <div className="hidden lg:flex lg:justify-end gap-4">
                     <Link
-                        href="mailto:info@strokeinfotech.com" shallow={true}
+                        href="mailto:info@strokeinfotech.com" 
                         className="w-[36px] h-[36px] border border-primary rounded-full flex justify-center items-center"
                     >
                         <img className="h-4 w-auto" src="/images/E-mail.svg" />
                     </Link>
                     <Link
-                        href="skype:strokeinfotech?chat" shallow={true}
+                        href="skype:strokeinfotech?chat" 
                         className="w-[36px] h-[36px] border border-primary rounded-full flex justify-center items-center"
                     >
                         <img className="h-4 w-auto" src="/images/skype.svg" />
                     </Link>
                     <Link
-                        href="#" shallow={true}
+                        href="#" 
                         className="w-[36px] h-[36px] border border-primary rounded-full flex justify-center items-center"
                     >
                         <img src="/images/Phone.svg" className="h-4 w-auto" />
@@ -209,7 +209,7 @@ export default function Header() {
             <div>
                 <div id="drawer" className={`drawer ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"} transition-transform ease-in-out duration-500 bg-white shadow h-screen p-6 fixed top-0 right-0 w-[90%] z-10`}>
                     <div className="flex items-center justify-between">
-                        <Link href="/" shallow={true} className="-m-1.5 p-1.5">
+                        <Link href="/"  className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
                             <Image
                                 src="/images/stroke-logo.svg"
@@ -235,13 +235,13 @@ export default function Header() {
                             <div className="space-y-2 py-6">
 
                                 <Link
-                                    href="/" shallow={true}
+                                    href="/"  
                                     className="-mx-3 block rounded-lg px-3 py-2 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary"
                                 >
                                     Home
                                 </Link>
                                 <Link
-                                    href="#" shallow={true}
+                                    href="#" 
                                     className="-mx-3 block rounded-lg px-3 py-2 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary"
                                 >
                                     Our Work
@@ -280,13 +280,13 @@ export default function Header() {
                                 </Disclosure>
 
                                 <Link
-                                    href="/" shallow={true} passHref={true}
+                                    href="/"  passHref={true}
                                     className="-mx-3 block rounded-lg px-3 py-2 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary"
                                 >
                                     Blog
                                 </Link>
                                 <Link
-                                    href="/about" shallow={true} passHref={true}
+                                    href="/about"  passHref={true}
                                     className="-mx-3 block rounded-lg px-3 py-2 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary"
                                 >
                                     About
@@ -295,7 +295,7 @@ export default function Header() {
                             </div>
                             <div className="py-6">
                                 <Link
-                                    href="#" shallow={true}
+                                    href="#" 
                                     className="-mx-3 block rounded-lg px-3 py-2.5 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary"
                                 >
                                     Log in
