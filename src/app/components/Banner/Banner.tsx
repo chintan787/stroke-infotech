@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Button from '../Button/Button'
 import SectionParagraph from '../SectionHeading/SectionParagraph'
+import Link from 'next/link'
 
 export default function Banner(
     {
@@ -35,7 +36,9 @@ export default function Banner(
                        
                     </div>
                     <div className="w-[100%] lg:w-3/5">
+                        <Link href="/about">
                         <Image src={imgPath} height={650} width={650} alt='banner_img' className="h-[650px] w-full object-cover rounded-l-[50px] border-l-[16px] border-primary" />
+                        </Link>
                     </div>
                 </div>
             </div>
