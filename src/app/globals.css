@@ -37,15 +37,6 @@ body {
 
 }
 
-/* footer social icons */
-.socialIcons:hover div {
-  border-color: #fff
-}
-
-.socialIcons:hover svg path {
-  fill: #fff;
-}
-
 
 /* rating */
 .dv-star-rating-star {
