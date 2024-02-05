@@ -280,13 +280,13 @@ export default function Header() {
                                 </Disclosure>
 
                                 <Link
-                                    href="#" shallow={true}
+                                    href="/" shallow={true} passHref={true}
                                     className="-mx-3 block rounded-lg px-3 py-2 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary"
                                 >
                                     Blog
                                 </Link>
                                 <Link
-                                    href="/about" shallow={true}
+                                    href="/about" shallow={true} passHref={true}
                                     className="-mx-3 block rounded-lg px-3 py-2 font-primaryFont text-[0.938rem] font-medium leading-[1.125rem] text-secondary"
                                 >
                                     About

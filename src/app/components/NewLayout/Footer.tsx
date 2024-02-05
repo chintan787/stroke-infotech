@@ -87,7 +87,7 @@ export default function Footer() {
                             <ul className="space-y-0.5 pt-1">
                                 {ourservice.map((list) =>
                                     <li>
-                                        <Link rel="noopener noreferrer" href="#" shallow={true} className="font-secondaryFont font-medium text-white text-[13px] leading-[29px] inline-block
+                                        <Link rel="noopener noreferrer" href="/" shallow={true} className="font-secondaryFont font-medium text-white text-[13px] leading-[29px] inline-block
                                         after:content-[''] after:block after:w-0 hover:after:w-full after:h-[1px] after:bg-primary transition-all after:transition-all ease-in after:duration-500  
                                         ">{list}</Link>
                                     </li>
@@ -99,7 +99,7 @@ export default function Footer() {
                             <ul className="space-y-0.5 pt-1">
                                 {company.map((list) =>
                                     <li>
-                                        <Link rel="noopener noreferrer" href="#" shallow={true} className="font-secondaryFont font-medium text-white text-[13px] leading-[29px] inline-block
+                                        <Link rel="noopener noreferrer" href="/about" shallow={true} className="font-secondaryFont font-medium text-white text-[13px] leading-[29px] inline-block
                                         after:content-[''] after:block after:w-0 hover:after:w-full after:h-[1px] after:bg-primary transition-all after:transition-all ease-in after:duration-500
                                         ">{list}</Link>
                                     </li>
