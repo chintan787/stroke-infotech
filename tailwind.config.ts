@@ -35,7 +35,8 @@ const config: Config = {
       fontFamily:{
         gilroy: ["var(--font-gilory)","system-ui", "sans-serif"],
         primaryFont:["var(--font-poppins)","system-ui", "sans-serif"],
-        secondaryFont:["var(--font-ptSans)","system-ui", "sans-serif"],
+        secondaryFont:["var(--font-inter)","system-ui", "sans-serif"],
+        // secondaryFont:["var(--font-ptSans)","system-ui", "sans-serif"],
         outfitFont:["var(--font-ptSans)","system-ui", "sans-serif"],
         nunitoFont:["var(--font-nunito)","system-ui", "sans-serif"]
        

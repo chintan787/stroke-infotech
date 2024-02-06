@@ -15,10 +15,10 @@ export default function Banner(
                 <div className="flex justify-end items-center flex-col md:flex-row gap-6 ">
                     <div className="w-full lg:w-2/5 py-8 md:py-0">
                         {title && (
-                        <h1 className={`font-primaryFont font-bold mr-12 text-secondary text-4xl md:text-5xl lg:text-[4rem] leading-[2.875rem] md:leading-[3.375rem] lg:leading-[4.375rem]`}>{title}</h1>
+                        <h1 className={`font-primaryFont font-semibold mr-12 text-secondary text-4xl md:text-5xl lg:text-[4rem] leading-[2.875rem] md:leading-[3.375rem] lg:leading-[4.375rem]`}>{title}</h1>
                         )}
                         {aboutTitle && (
-                        <h2 className={`font-primaryFont font-bold mr-12 text-primary text-4xl md:text-5xl leading-[2.875rem] md:leading-[3.688rem]`}>{aboutTitle}</h2>
+                        <h2 className={`font-primaryFont font-semibold mr-12 text-primary text-4xl md:text-5xl leading-[2.875rem] md:leading-[3.688rem]`}>{aboutTitle}</h2>
                         )}
                         <div className="w-4/5 my-6">
                             {data?.map((item:any,index: any) =>

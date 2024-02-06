@@ -38,7 +38,7 @@ export default function BlogSection() {
                     
 
                     <div className="w-full lg:w-2/5">
-                        <h2 className="text-2xl md:text-[1.813rem] leading-9 md:leading-[3rem] text-black font-bold ">Curious About The Latest Tech Trends And Technologies? Visit Our Blogs</h2>
+                        <h2 className="text-2xl md:text-[1.813rem] leading-9 md:leading-[3rem] text-black font-semibold ">Curious About The Latest Tech Trends And Technologies? Visit Our Blogs</h2>
                         <div className="my-4">
                             <SectionParagraph text="A passionate team of developers, designers & originators, who can visualize and develop breathtaking design, websites and apps for your business." />
                         </div>

@@ -31,7 +31,7 @@ export default function Testimonials() {
             <div className="my-10 flex flex-col lg:flex-row gap-10 lg:gap-12 justify-between items-start mr-4 md:mr-10">
 
               <div className="w-full lg:w-2/5">
-                <h3 className="font-secondaryFont text-xl md:text-2xl text-black font-bold">Dev Staff Augmentation for Flight & Hotels Management System</h3>
+                <h3 className="font-secondaryFont text-xl md:text-2xl text-black font-semibold">Dev Staff Augmentation for Flight & Hotels Management System</h3>
 
                 <div className="my-8">
                   <div className="flex items-center my-2">
@@ -60,7 +60,7 @@ export default function Testimonials() {
 
                 <div className="bg-lightRed max-w-[590px] ml-auto mr-auto lg:ml-auto lg:mr-0  p-6 md:p-8 rounded-[20px]">
                   <StarRating />
-                  <h4 className="font-bold text-xl md:text-[2rem] leading-[2.125rem] md:leading-[2.625rem] mt-2 mb-6 text-black">“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
+                  <h4 className="font-semibold text-xl md:text-[2rem] leading-[2.125rem] md:leading-[2.625rem] mt-2 mb-6 text-black">“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
                   <div className="flex items-center">
                     <Image src="/images/Dp.png" height={74} width={74} className="w-[65px] md:w-[75px] h-[65px] md:h-[75px] rounded-full" alt='profile' />
                     <div className="pl-4">
@@ -82,7 +82,7 @@ export default function Testimonials() {
             <div className="my-10 flex flex-col lg:flex-row gap-10 lg:gap-12 justify-between items-start mr-4 md:mr-10">
 
               <div className="w-full lg:w-2/5">
-                <h3 className="font-secondaryFont text-xl md:text-2xl text-black font-bold">Dev Staff Augmentation for Flight & Hotels Management System</h3>
+                <h3 className="font-secondaryFont text-xl md:text-2xl text-black font-semibold">Dev Staff Augmentation for Flight & Hotels Management System</h3>
 
                 <div className="my-8">
                   <div className="flex items-center my-2">
@@ -111,7 +111,7 @@ export default function Testimonials() {
 
                 <div className="bg-lightRed max-w-[590px] ml-auto mr-auto lg:ml-auto lg:mr-0  p-6 md:p-8 rounded-[20px]">
                   <StarRating />
-                  <h4 className="font-bold text-xl md:text-[2rem] leading-[2.125rem] md:leading-[2.625rem] mt-2 mb-6 text-black">“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
+                  <h4 className="font-semibold text-xl md:text-[2rem] leading-[2.125rem] md:leading-[2.625rem] mt-2 mb-6 text-black">“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
                   <div className="flex items-center">
                     <Image src="/images/Dp.png" height={74} width={74} className="w-[65px] md:w-[75px] h-[65px] md:h-[75px] rounded-full" alt='profile' />
                     <div className="pl-4">
@@ -134,7 +134,7 @@ export default function Testimonials() {
             <div className="my-10 flex flex-col lg:flex-row gap-10 lg:gap-12 justify-between items-start mr-4 md:mr-10">
 
               <div className="w-full lg:w-2/5">
-                <h3 className="font-secondaryFont text-xl md:text-2xl text-black font-bold">Dev Staff Augmentation for Flight & Hotels Management System</h3>
+                <h3 className="font-secondaryFont text-xl md:text-2xl text-black font-semibold">Dev Staff Augmentation for Flight & Hotels Management System</h3>
 
                 <div className="my-8">
                   <div className="flex items-center my-2">
@@ -163,7 +163,7 @@ export default function Testimonials() {
 
                 <div className="bg-lightRed max-w-[590px] ml-auto mr-auto lg:ml-auto lg:mr-0  p-6 md:p-8 rounded-[20px]">
                   <StarRating />
-                  <h4 className="font-bold text-xl md:text-[2rem] leading-[2.125rem] md:leading-[2.625rem] mt-2 mb-6 text-black">“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
+                  <h4 className="font-semibold text-xl md:text-[2rem] leading-[2.125rem] md:leading-[2.625rem] mt-2 mb-6 text-black">“ They are very professional and are always interested in understanding the problem that we are solving.”</h4>
                   <div className="flex items-center">
                     <Image src="/images/Dp.png" height={74} width={74} className="w-[65px] md:w-[75px] h-[65px] md:h-[75px] rounded-full" alt='profile' />
                     <div className="pl-4">

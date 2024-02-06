@@ -6,7 +6,7 @@ import { Outfit } from 'next/font/google'
 import './globals.css';
 import localFont from 'next/font/local';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] ,variable: '--font-inter'})
 const Gilory = localFont({
   src: [
     {
@@ -29,17 +29,6 @@ const Gilory = localFont({
   variable: '--font-gilory'
 })
 
-
-
-const plus = Plus_Jakarta_Sans({
-  variable: '--font-plus-Jakarta-Sans',
-  subsets: ['latin']
-})
-
-const outfit = Outfit({
-  variable: '--font-outfit',
-  subsets: ['latin']
-})
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -70,7 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${Gilory.variable} ${plus.variable} ${outfit.variable} ${poppins.variable} ${ptSans.variable} ${nunito.variable}`}>{children}</body>
+      <body className={`${Gilory.variable} ${poppins.variable} ${ptSans.variable} ${nunito.variable} ${inter.variable}`}>{children}</body>
     </html>
   )
 }
